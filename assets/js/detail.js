@@ -1,6 +1,6 @@
 // add class navbarDark on navbar scroll
 const header = document.querySelector('.navbar');
-const shapeItems = document.querySelectorAll('.nav-shape');
+const circleItems = document.querySelectorAll('.nav-shape');
 
 const path = window.location.pathname;
 const pathList = path.split(/[./]/);
@@ -8,14 +8,15 @@ pathList.shift();
 pathList.shift();
 const page = pathList.shift();
 
-shapeItems.forEach(function(thisItem) {
+
+
+circleItems.forEach(function(thisItem) {
+    // thisItem.classList.add('transparency');
+    
     if (thisItem.classList.contains(page)) {
-        if (thisItem.classList.contains("nav-triangle")) {
-            thisItem.classList.add('clicked');
-        } else {
-            thisItem.classList.add('lightblue');
-        }
+        thisItem.classList.add('lightblue');
     }
+    
 });
 
 /*
@@ -23,21 +24,19 @@ shapeItems.forEach(function(thisItem) {
 window.onscroll = function() {
     var top = window.scrollY;
     if(top >=100) {
-        header.classList.add('navbarDark');
 
         circleItems.forEach(function(thisItem) {
+
             if (thisItem.classList.contains(page)) {
-                thisItem.classList.add('scrolled');
+                thisItem.classList.remove('scrolled');
             }
         });
     }
     else {
 
-        header.classList.remove('navbarDark');
-
         circleItems.forEach(function(thisItem) {
             if (thisItem.classList.contains(page)) {
-                thisItem.classList.remove('scrolled');
+                thisItem.classList.add('scrolled');
             }
         });
     }

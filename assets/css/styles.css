@@ -1,3 +1,22 @@
+/*Seungyun - title of the website*/
+.navbar-brand {
+    color: black;
+}
+
+.link {
+    color:#008000;
+    /*text-decoration: none;*/
+}
+
+
+/*
+a:link {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+*/
+
 /* hero background image */
 .bgimage {
     height:100vh;
@@ -20,6 +39,132 @@
     transform: translate(-50%, -50%);
     color: black;
 }
+
+
+
+/* nav bar */
+
+.nav-text{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.nav-shape {
+    background: white;
+    text-align: center;
+}
+
+.nav-link:hover .nav-triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid lightblue;
+}
+
+.nav-triangle.clicked{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid lightblue;
+}
+
+.nav-link:hover .nav-square {
+    background: rgba(173, 216, 230, 1);
+}
+
+.nav-link:hover .nav-circle {
+    background: rgba(173, 216, 230, 1);
+}
+.nav-link:hover .nav-text {
+    color: rgb(255, 255, 255);
+}
+
+.nav-circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.nav-circle .nav-text {
+    position: absolute;
+    top: 10px;
+    left: 22px;
+}
+
+.nav-square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.nav-square .nav-text {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 1px;
+
+}
+
+.nav-triangle {
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid white;
+}
+
+.nav-shape.lightblue {
+    background: lightblue;
+}
+
+.nav-shape.transparency {
+    background: rgba(255, 255, 255, 0.9)
+}
+
+.nav-shape.lightblue.transparency {
+    background: rgba(173, 216, 230, 0.6);
+}
+
+.triangle-container{
+    position: relative;
+}
+.triangle-container .nav-text{
+    position: absolute;
+    top: 10px;
+    left: 35px;
+}
+
+
+
+
+
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background:rgb(249, 255, 138);
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background: rgb(249, 255, 138);
+}
+
+.pentagon {
+    position: relative;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: lightblue;
+}
+    
 
 
 /* about section image css */
@@ -50,11 +195,11 @@
 
 
 
-/* display background color black on navbar scroll */
+/*display background color black on navbar scroll
 .navbarScroll.navbarDark {
-    background-color: black;
+    background-color: lightblue;
 }
-
+*/
 
 /* social media icons styling */
 .social-icons {
@@ -75,10 +220,15 @@
 
 
 /* spacing on all sections */
-#forfun, #projects, #research, #contact {
+#forfun, #projects, #research, #contact, #urp {
     margin-top: 4rem;
     padding-top: 4rem;
 }
 #contact {
     padding-bottom: 4rem;
+}
+
+
+div {
+    font-family: 'Avenir';
 }

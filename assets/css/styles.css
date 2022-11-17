@@ -43,7 +43,6 @@ a:link {
 
 
 /* nav bar */
-
 .nav-text{
     text-decoration: none;
     color: black;
@@ -143,39 +142,81 @@ a:link {
 
 
 
+/* sidebar */
+.square.prev {
+    width: 60px;
+    height: 60px;
+    background: lightblue;
+    opacity: 0.5;
+}
+.square.next {
+    width: 60px;
+    height: 60px;
+    background: lightblue;
+    opacity: 0.5;
+}
+
+.sidenav-left {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 2%;
+    overflow-x: hidden;
+}
+
+.sidenav-right {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    right: 2%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* projects detail page */
 
 .circle {
     border-radius: 50%;
     width: 100px;
     height: 100px;
+}
+
+.motivation {
     background:rgb(249, 255, 138);
 }
+
+
+
+
+
+
+/* research detail page */
+
 .square {
     width: 100px;
     height: 100px;
-    background: rgb(249, 255, 138);
 }
 
-.pentagon {
-    position: relative;
-    width: 54px;
-    box-sizing: content-box;
-    border-width: 50px 18px 0;
-    border-style: solid;
-    border-color: lightblue;
-}
-    
-
-
-/* about section image css */
-.imageAboutPage {
-    width: 100%;
+.motivation {
+    background-color:rgb(255, 251, 185);
+    text-align:center;
 }
 
+.process {
+    background-color:rgb(255, 227, 186);
+    text-align: center;
+}
 
-/* services section css */
+.result {
+    background-color:rgb(249, 207, 207);
+    text-align: center;
+}
+
 .servicesText.card {
-    height: 280px;
+    height: 355px;
     cursor: pointer;
   }
 .servicesIcon {
@@ -183,14 +224,34 @@ a:link {
     text-align: center;
     width: 100%;
 }
+
+.img-vr{
+    width: 300px;
+    height: 300px;
+}
+
 .card-title {
     text-align: center;
 }
+.card-text {
+    text-align: center;
+}
 .card:hover .servicesIcon {
-    color: #008000;
+    color: lightblue;
 }
 .servicesText:hover {
-    border: 1px solid #008000;
+    border: 2px solid lightblue;
+}
+
+
+    
+
+
+
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
 }
 
 
@@ -220,7 +281,7 @@ a:link {
 
 
 /* spacing on all sections */
-#forfun, #projects, #research, #contact, #urp {
+#forfun, #projects, #research, #contact, #urp, #midlife {
     margin-top: 4rem;
     padding-top: 4rem;
 }

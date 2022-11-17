@@ -1,6 +1,6 @@
 // add class navbarDark on navbar scroll
 const header = document.querySelector('.navbar');
-const circleItems = document.querySelectorAll('.nav-shape');
+const shapeItems = document.querySelectorAll('.nav-shape');
 
 const path = window.location.pathname;
 const pathList = path.split(/[./]/);
@@ -10,11 +10,13 @@ const page = pathList.shift();
 
 
 
-circleItems.forEach(function(thisItem) {
-    // thisItem.classList.add('transparency');
-    
+shapeItems.forEach(function(thisItem) {
     if (thisItem.classList.contains(page)) {
-        thisItem.classList.add('lightblue');
+        if (thisItem.classList.contains("nav-triangle")) {
+            thisItem.classList.add('clicked');
+        } else {
+            thisItem.classList.add('lightblue');
+        }
     }
     
 });

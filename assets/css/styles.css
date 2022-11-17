@@ -1,21 +1,10 @@
 /*Seungyun - title of the website*/
+
+/*home*/
 .navbar-brand {
     color: black;
 }
 
-.link {
-    color:#008000;
-    /*text-decoration: none;*/
-}
-
-
-/*
-a:link {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
-}
-*/
 
 /* hero background image */
 .bgimage {
@@ -26,10 +15,10 @@ a:link {
 }
 /* text css above hero image*/
 .hero_title {
-    font-size: 4.5rem;
+    font-size: 3rem;
 }
 .hero_desc {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .hero-text {
     text-align: center;
@@ -42,7 +31,13 @@ a:link {
 
 
 
-/* nav bar */
+
+
+
+
+
+
+/* nav bar -----------------------------------------------------------*/
 .nav-text{
     text-decoration: none;
     color: black;
@@ -142,7 +137,7 @@ a:link {
 
 
 
-/* sidebar */
+/* sidebar -------------------------------------------*/
 .square.prev {
     width: 60px;
     height: 60px;
@@ -172,6 +167,22 @@ a:link {
     overflow-x: hidden;
 }
 
+.circle.prev{
+    width: 60px;
+    height: 60px;
+    background: lightblue;
+    opacity: 0.5;
+}
+.circle.next{
+    width: 60px;
+    height: 60px;
+    background: lightblue;
+    opacity: 0.5;
+}
+
+
+
+
 
 
 
@@ -187,6 +198,18 @@ a:link {
 .motivation {
     background:rgb(249, 255, 138);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -218,7 +241,7 @@ a:link {
 .servicesText.card {
     height: 355px;
     cursor: pointer;
-  }
+}
 .servicesIcon {
     font-size: 36px;
     text-align: center;
@@ -242,6 +265,80 @@ a:link {
 .servicesText:hover {
     border: 2px solid lightblue;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* forfun detail page ------------------------------------------------*/
+
+.servicesText.card.forfun {
+    max-height: 450px;
+    height: 100%;
+    cursor: pointer;
+}
+.card-title.forfun {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.triangle {
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 60px solid rgba(173, 216, 230, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+.motivation.triangle {
+    background: transparent;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    border-top: 110px solid rgb(255, 251, 185);
+}
+
+.triangle-container .text {
+    position: absolute;
+    top:8px;
+    left: 19px;
+}
+
+
+
+
+/*------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
 
 
     
@@ -292,4 +389,10 @@ a:link {
 
 div {
     font-family: 'Avenir';
+}
+
+
+.link {
+    color:#008000;
+    /*text-decoration: none;*/
 }

@@ -11,18 +11,32 @@ const page = pathList.shift();
 
 shapeItems.forEach(function(thisItem) {
     if (thisItem.classList.contains(page)) {
+
+        thisItem.classList.add('colored');
+        /*
         if (thisItem.classList.contains("nav-triangle")) {
             thisItem.classList.add('clicked');
         } else {
             thisItem.classList.add('lightblue');
         }
+        */
     }
 });
-
 
 function hover(element) {
     imageHolder.setAttribute('src', element.getAttribute('src'));
 }
+
+function changeText(element, text) {
+    element.innerHTML=text;
+}
+
+
+
+
+
+
+
   
 
 /*

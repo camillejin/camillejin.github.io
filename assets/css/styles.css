@@ -1,10 +1,13 @@
 /*Seungyun - title of the website*/
-
-/*home*/
-.navbar-brand {
+.seungyun {
+    font-family: Helvetica;
     color: black;
 }
 
+
+.introduction {
+    font-family: Helvetica;
+}
 
 /* hero background image */
 .bgimage {
@@ -16,6 +19,9 @@
 /* text css above hero image*/
 .hero_title {
     font-size: 3rem;
+}
+.intro-3 {
+    font-size: 2rem;
 }
 .hero_desc {
     font-size: 1rem;
@@ -35,58 +41,59 @@
 
 
 
-
-
 /* nav bar -----------------------------------------------------------*/
-.nav-text{
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
-
 .nav-shape {
     background: white;
     text-align: center;
-}
-
-.nav-link:hover .nav-triangle {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid lightblue;
-}
-
-.nav-triangle.clicked{
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid lightblue;
-}
-
-.nav-link:hover .nav-square {
-    background: rgba(173, 216, 230, 1);
-}
-
-.nav-link:hover .nav-circle {
-    background: rgba(173, 216, 230, 1);
-}
-.nav-link:hover .nav-text {
-    color: rgb(255, 255, 255);
 }
 
 .nav-circle {
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    text-align: center;
     position: relative;
 }
 
-.nav-circle .nav-text {
+.nav-circle.projects:hover {
+    background:rgb(201, 220, 245)
+}
+.nav-circle.forfun:hover {
+    background:rgb(255, 200, 200);
+}
+.nav-circle.research:hover {
+    background:rgb(213, 255, 227);
+}
+
+.nav-link:hover .nav-text {
+    color: rgb(255, 255, 255);
+}
+
+.nav-circle .text-projects {
+    color: black;
     position: absolute;
     top: 10px;
-    left: 22px;
+    left: 20px;
+}
+.nav-circle .text-research {
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+}
+.nav-circle .text-forfun {
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+}
+
+
+
+
+
+.nav-link:hover .nav-square {
+    background: rgba(173, 216, 230, 1);
 }
 
 .nav-square {
@@ -101,21 +108,19 @@
     position: absolute;
     top: 10px;
     left: 1px;
-
 }
 
-.nav-triangle {
-    background: transparent;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid white;
+
+.nav-shape.projects.colored {
+    background: rgb(201, 220, 245);
+}
+.nav-shape.research.colored {
+    background: rgb(178, 255, 204);
+}
+.nav-shape.forfun.colored {
+    background:rgb(255, 200, 200);
 }
 
-.nav-shape.lightblue {
-    background: lightblue;
-}
 
 .nav-shape.transparency {
     background: rgba(255, 255, 255, 0.9)
@@ -138,16 +143,26 @@
 
 
 /* sidebar -------------------------------------------*/
-.square.prev {
-    width: 60px;
-    height: 60px;
-    background: lightblue;
-    opacity: 0.5;
+.prev-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    text-align: center;
 }
+.prev-box:hover {
+    background:rgb(201, 220, 245)
+}
+
+.arrow {
+    font-family: Helvetica;
+    font-size: 2.8rem;
+}
+
 .square.next {
     width: 60px;
     height: 60px;
-    background: lightblue;
+    background: rgb(214, 254, 210);
     opacity: 0.5;
 }
 
@@ -386,7 +401,7 @@ display background color black on navbar scroll
 
 
 /* spacing on all sections */
-#forfun, #projects, #research, #contact, #urp, #midlife, #film {
+#forfun, #projects, #research, #contact, #urp, #midlife, #film, #About, #home {
     margin-top: 4rem;
     padding-top: 4rem;
 }
@@ -394,10 +409,6 @@ display background color black on navbar scroll
     padding-bottom: 4rem;
 }
 
-
-div {
-    font-family: 'Avenir';
-}
 
 
 .link {

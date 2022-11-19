@@ -30,7 +30,11 @@
 
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">Seungyun</a>
+
+            <a class="navbar-brand" href="../index.html">
+                <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,7 +43,7 @@
                     <li class="nav-item active">
                             <a class="nav-link px-2" href="projects.html">
                                 <div class="nav-shape nav-circle projects">
-                                    <p class="nav-text">
+                                    <p class="text-projects">
                                         My <br> Projects
                                     </p>
                                 </div>
@@ -48,7 +52,7 @@
                     <li class="nav-item">
                             <a class="nav-link px-2" href="research.html">
                                 <div class="nav-shape nav-circle research">
-                                    <p class="nav-text">
+                                    <p class="text-research">
                                         Research <br> Experience
                                     </p>
                                 </div>
@@ -56,9 +60,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-2" href="forfun.html">
-                            <div class="triangle-container">
-                                <div class="nav-shape nav-circle forfun"></div>
-                                <div class="nav-text">
+                            <div class="nav-shape nav-circle forfun">
+                                <div class="text-forfun">
                                     <p>For<br>Fun</p>
                                 </div>
                             </div>

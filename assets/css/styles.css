@@ -62,7 +62,7 @@
     background:rgb(255, 200, 200);
 }
 .nav-circle.research:hover {
-    background:rgb(213, 255, 227);
+    background:rgb(211, 253, 210);
 }
 
 .nav-link:hover .nav-text {
@@ -115,7 +115,7 @@
     background: rgb(201, 220, 245);
 }
 .nav-shape.research.colored {
-    background: rgb(178, 255, 204);
+    background: rgb(211, 253, 210);
 }
 .nav-shape.forfun.colored {
     background:rgb(255, 200, 200);
@@ -271,14 +271,20 @@
 .card-title {
     text-align: center;
 }
+
 .card-text {
     text-align: center;
 }
 .card:hover .servicesIcon {
-    color: lightblue;
+    color: rgb(184, 254, 183);
 }
+.card:hover .card-title {
+    color: rgb(184, 254, 183);
+}
+
+
 .servicesText:hover {
-    border: 2px solid lightblue;
+    border: 2px solid rgb(184, 254, 183);
 }
 
 

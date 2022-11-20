@@ -15,15 +15,15 @@
   <body>
 
     <nav class="sidenav-left">
-        <a href="midlife.html">
-            <div class="square prev"></div>
-        </a>
+        <div class="prev-box" OnClick="location.href ='midlife.html'">
+            <h1 class="arrow prev">←</h1>
+        </div>
     </nav>
 
     <nav class="sidenav-right">
-        <a href="urp.html">
-            <div class="square next"></div>
-        </a>
+        <div class="next-box" OnClick="location.href ='urp.html'">
+            <h1 class="arrow next">→</h1>
+        </div>
     </nav>
 
 
@@ -33,26 +33,27 @@
                 <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
             </a>
 
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul class="navbar-nav ms-auto">
+                <ul class="nav ms-auto justify-content-end">
+
                     <li class="nav-item active">
-                            <a class="nav-link px-2" href="../projects.html">
-                                <div class="nav-shape nav-circle projects">
-                                    <p class="nav-text">
-                                        My <br> Projects
-                                    </p>
-                                </div>
-                            </a>
+                        <a class="nav-link px-2" href="../projects.html">
+                            <div class="nav-shape nav-circle projects">
+                                <p class="text-projects">
+                                    My <br> Projects
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li class="nav-item">
                             <a class="nav-link px-2" href="../research.html">
-                                <div class="nav-shape nav-square research">
-                                    <p class="nav-text">
+                                <div class="nav-shape nav-circle research">
+                                    <p class="text-research">
                                         Research <br> Experience
                                     </p>
                                 </div>
@@ -60,9 +61,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-2" href="../forfun.html">
-                            <div class="triangle-container">
-                                <div class="nav-shape nav-triangle forfun"></div>
-                                <div class="nav-text">
+                            <div class="nav-shape nav-circle forfun">
+                                <div class="text-forfun">
                                     <p>For<br>Fun</p>
                                 </div>
                             </div>
@@ -74,53 +74,68 @@
         </div>
     </nav>
 
-    <section id="midlife">
+    <section id="earthquake">
         <div class="row align-items-center text-center mt-5">
             <h1 class="display-6 py-5">Developing Earthquake VR for Design Research</h1>
         </div>
         <div class="mx-auto pb-3">
             <div class="square mx-auto d-flex justify-content-center">
                 <div class="motivation square align-self-center">
-                    <p class="mt-4">Motivation</p>
+                    <p class="mt-4">Description</p>
                 </div>
             </div>
         </div>
-        <div class="row align-items-center text-center">
-            <div class="body">
-                <p>
-                    The research aimed to test the different design of mobile application developed
-                    to help people with evacuation when earthquake occurs.
+        <div class="row">
+            <div class="body px-5 d-flex justify-content-center">
+                <p class="py-5 text-center">
+                    During the summer of 2022, I interned at the Digital Media Lab, Yonsei University. <br>
+                    I took on the role of developing an earthquake simulation VR, <br>
+                     which will be used for experiment in a design research. <br>
+                    The research aimed to test the different designs of mobile application that were <br>
+                     developed in order to help people with evacuation when earthquake occurs. <br>
+                    The program was required to observe the subjects' behavior in a simulated earthquake. <br>
+                    (This research was a national research project.)<br>
                 </p>
             </div>
         </div>
 
-        <div class="mx-auto pb-3 pt-5">
-            <div class="square mx-auto d-flex justify-content-center">
+        <div class="row">
+            <div class="square mx-auto py-auto d-flex justify-content-center">
                 <div class="process square align-self-center">
                     <p class="mt-4">Process</p>
                 </div>
             </div>
         </div>
 
-        <div class="row align-items-center text-center">
-            <div class="body">
-                <p>
-                    Starting from the planning of the program, I worked on the development individually. <br>
-                    Graduate students at the Digital Media Lab, Yonsei University provided excellent support. <br>
+
+        <div class="row">
+            <div class="py-3 d-flex justify-content-center">
+                <div class="align-self-center d-flex justify-content-center">
+                    <img class="card-img-top" src="../../assets/img/research/earthquake/eq_research.png" 
+                    alt="Card image" style="width:50%">
+                </div>
+            </div>
+        </div>
+
+
+        
+
+        <div class="row">
+            <div class="body px-5 py-5 d-flex justify-content-center">
+
+                <p class="text-center">
+                    Prior to the actual development, I collected visual data on how the earthquake should appear. <br>
+                    I did a brief research on the effects of earthquakes according to the intensities <br>
+                     and collected video clips for reference. This helped in making sure that the lead researchers <br>
+                     and I were on the same page. After selecting the intensity level of the earthquke simulation program, <br>
+                    based on the reference clips, I made a list of Unity assets that would be required for the program. <br>
+                    The assets were then implemented onto the program to simulate earthquake. <br>
+                    I wrote C# scripts, created timeline, and tested with Oculus Quest 2 for fine-tuning. <br>
+                    During the process, So Yeon Kim and other Graduate students at the lab provided excellent advice and support. <br>
 
                 </p>
             </div>
         </div>
-
-
-
-        <div class="d-flex justify-content-center">
-            <div class="align-self-center d-flex justify-content-center">
-                <img class="card-img-top" src="../../assets/img/research/earthquake/eq_research.png" 
-                alt="Card image" style="width:50%">
-            </div>
-        </div>
-
 
 
 

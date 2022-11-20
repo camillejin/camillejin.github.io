@@ -15,15 +15,15 @@
   <body>
 
     <nav class="sidenav-left">
-        <a href="urp.html">
-            <div class="square prev"></div>
-        </a>
+        <div class="prev-box" OnClick="location.href ='midlife.html'">
+            <h1 class="arrow prev">←</h1>
+        </div>
     </nav>
 
     <nav class="sidenav-right">
-        <a href="earthquake.html">
-            <div class="square next"></div>
-        </a>
+        <div class="next-box" OnClick="location.href ='urp.html'">
+            <h1 class="arrow next">→</h1>
+        </div>
     </nav>
 
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
@@ -32,35 +32,36 @@
                 <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul class="navbar-nav ms-auto">
+                <ul class="nav ms-auto justify-content-end">
+
                     <li class="nav-item active">
-                            <a class="nav-link px-2" href="../projects.html">
-                                <div class="nav-shape nav-circle projects">
-                                    <p class="nav-text">
-                                        My <br> Projects
-                                    </p>
-                                </div>
-                            </a>
+                        <a class="nav-link px-2" href="html/projects.html">
+                            <div class="nav-shape nav-circle projects">
+                                <p class="text-projects">
+                                    My <br> Projects
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link px-2" href="../research.html">
-                                <div class="nav-shape nav-square research">
-                                    <p class="nav-text">
+                            <a class="nav-link px-2" href="html/research.html">
+                                <div class="nav-shape nav-circle research">
+                                    <p class="text-research">
                                         Research <br> Experience
                                     </p>
                                 </div>
                             </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-2" href="../forfun.html">
-                            <div class="triangle-container">
-                                <div class="nav-shape nav-triangle forfun"></div>
-                                <div class="nav-text">
+                        <a class="nav-link px-2" href="html/forfun.html">
+                            <div class="nav-shape nav-circle forfun">
+                                <div class="text-forfun">
                                     <p>For<br>Fun</p>
                                 </div>
                             </div>
@@ -71,6 +72,8 @@
             </div>
         </div>
     </nav>
+
+               
 
     <section id="midlife">
         <div class="row align-items-center text-center mt-5">

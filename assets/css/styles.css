@@ -7,6 +7,7 @@
 
 .introduction {
     font-family: Helvetica;
+    text-align: center;
 }
 
 /* hero background image */
@@ -42,6 +43,7 @@
 
 
 /* nav bar -----------------------------------------------------------*/
+
 .nav-shape {
     background: white;
     text-align: center;
@@ -143,16 +145,6 @@
 
 
 /* sidebar -------------------------------------------*/
-.prev-box {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: transparent;
-    text-align: center;
-}
-.prev-box:hover {
-    background:rgb(201, 220, 245)
-}
 
 .arrow {
     font-family: Helvetica;
@@ -407,9 +399,14 @@ display background color black on navbar scroll
 
 
 /* spacing on all sections */
-#forfun, #projects, #research, #contact, #urp, #midlife, #film, #About, #home {
+#forfun, #earthquake, #projects, #research, #contact, #urp, #midlife, 
+#film, #About, #home, #color {
     margin-top: 4rem;
     padding-top: 4rem;
+}
+
+#earthquake .body {
+    font-family: 'Monaco', 'Lucida Console', 'Courier New', monospace;
 }
 #contact {
     padding-bottom: 4rem;

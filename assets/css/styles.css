@@ -214,6 +214,44 @@
 
 
 
+/* projects page */
+.projects-background {
+    background:#8cf0ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* research page */
+.research-background {
+    background:#acffa6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -407,6 +445,10 @@ display background color black on navbar scroll
 
 #earthquake .body {
     font-family: 'Monaco', 'Lucida Console', 'Courier New', monospace;
+}
+#urp .body {
+    font-family: 'Monaco', 'Lucida Console', 'Courier New', monospace;
+
 }
 #contact {
     padding-bottom: 4rem;

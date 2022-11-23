@@ -24,19 +24,14 @@
   <body class="projects-background">
 
 
-    <nav class="sidenav-left">
-        <div class="prev-box" OnClick="location.href ='forfun.html'">
-            <h1 class="arrow prev">←</h1>
-        </div>
-    </nav>
-
+    
+<!--
     <nav class="sidenav-right">
         <div class="next-box" OnClick="location.href ='research.html'">
             <h1 class="arrow next">→</h1>
         </div>
     </nav>
-
-
+-->
 
 
 
@@ -44,37 +39,38 @@
         <div class="container">
 
             <a class="navbar-brand" href="../index.html">
-                <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
+                <p class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</p>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto justify-content-end">
                     <li class="nav-item ms-auto active">
                             <a class="nav-link px-2" href="projects.html">
                                 <div class="nav-shape projects px-3">
-                                    <h6 class="text-projects">
+                                    <p class="nav-text text-projects">
                                         My Projects
-                                    </h6>
+                                    </p >
                                 </div>
                             </a>
                     </li>
                     <li class="nav-item ms-auto">
                             <a class="nav-link px-2" href="research.html">
                                 <div class="nav-shape research px-3">
-                                    <h6 class="text-research">
+                                    <p  class="nav-text text-research">
                                         Research Experience
-                                    </h6>
+                                    </p>
                                 </div>
                             </a>
                     </li>
                     <li class="nav-item ms-auto">
                         <a class="nav-link px-2" href="forfun.html">
                             <div class="nav-shape forfun px-3">
-                                <div class="text-forfun">
-                                    <h6>For Fun</h6>
+                                <div class="nav-text text-forfun">
+                                    <p>For Fun</p>
                                 </div>
                             </div>
                         </a>
@@ -85,47 +81,82 @@
         </div>
     </nav>
 
+
+    <section id="sidebar">
+
+        <aside class="title">
+            <div class="title">
+                <p class="side-title projects active">My Projects</p>
+            </div>
+        </aside>
+
+        <nav class="sidenav-right">
+            <div class="next-box" OnClick="location.href ='research.html'">
+                <p class="arrow next">→</p>
+            </div>
+        </nav>
+
+    </section>
+    
+        
+
+
+
+
+
     <section id="projects">
-        <div class="projects-container">
 
             <!--3d music house-->
-            <div class="project-item"  OnClick="location.href ='projects/3d.html'">
-                <div class="project-title">
-                    <p class="3d">3D Music House</p>
+            <div class="row justify-content-center">
+                <div class="item project-item col-md-7 my-2"  OnClick="location.href ='projects/3d.html'">
+
+                        <div class="title project-title">
+                            <p class="cg">3D Music House</p>
+                        </div>
+                        <div class="thumbnail-container d-flex justify-content-center">
+                            <img class="cg thumbnail my-2 mx-2" src="../assets/img/projects/3d/3d.png">
+                        </div>
+                    
+                </div>
+
+                <!--ioT-->
+                <div class="item project-item col-md-3 my-2"  OnClick="location.href ='projects/ioT.html'">
+                    
+                        <div class="title project-title">
+                            <p class="ioT">ioT</p>
+                        </div>
+                    </div>
+                
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="item project-item col-10 my-1 mx-3"  OnClick="location.href ='projects/Tutu.html'">
+
+                    <div class="title project-title">
+                        <p class="Tutu">Tutu</p>
+                    </div>
+                    <div class="thumbnail-container d-flex justify-content-center">
+                        <img class="Tutu thumbnail my-2 mx-2" src="../assets/img/projects/tutu/tutu_app.png">
+                    </div>
+                    
                 </div>
             </div>
 
-
-            <!--ioT-->
-            <div class="project-item"  OnClick="location.href ='projects/ioT.html'">
-                <div class="project-title">
-                    <p class="3d">ioT</p>
+            <div class="row justify-content-center py-2">
+                <!--color design-->
+                
+                <div class="item project-item col-10 py-2 mx-3"  OnClick="location.href ='projects/color.html'">
+                    <div class="title project-title">
+                        <p class="color">Color Design</p>
+                    </div>
+                    <div class="thumbnail-container d-flex justify-content-center">
+                        <img class="Tutu thumbnail my-2 mx-2" src="../assets/img/projects/color/colorp.png">
+                    </div>
+                    
                 </div>
+
             </div>
-
-
-            <!--library-->
-            <div class="project-item"  OnClick="location.href ='projects/Tutu.html'">
-                <div class="project-title">
-                    <p class="3d">Tutu</p>
-                </div>
-            </div>
-
-
-            <!--color design-->
-            <div class="project-item"  OnClick="location.href ='projects/color.html'">
-                <div class="project-title">
-                    <p class="3d">Color Design</p>
-                </div>
-            </div>
-
-
-
-
-
-
-
-        </div>
     </section>
 
 

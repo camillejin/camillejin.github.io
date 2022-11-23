@@ -22,24 +22,11 @@
 
   <body class="research-background">
 
-    <nav class="sidenav-left">
-        <div class="prev-box" OnClick="location.href ='projects.html'">
-            <h1 class="arrow prev">←</h1>
-        </div>
-    </nav>
-
-    <nav class="sidenav-right">
-        <div class="next-box" OnClick="location.href ='forfun.html'">
-            <h1 class="arrow next">→</h1>
-        </div>
-    </nav>
-
-
 
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
+                <p class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</p>
             </a>
 
 
@@ -52,27 +39,27 @@
                     <li class="nav-item ms-auto active">
                             <a class="nav-link px-2" href="projects.html">
                                 <div class="nav-shape projects px-3">
-                                    <h6 class="text-projects">
+                                    <p class="nav-text text-projects">
                                         My Projects
-                                    </h6>
+                                    </p>
                                 </div>
                             </a>
                     </li>
                     <li class="nav-item ms-auto">
                             <a class="nav-link px-2" href="research.html">
                                 <div class="nav-shape research px-3">
-                                    <h6 class="text-research">
+                                    <p class="nav-text text-research">
                                         Research Experience
-                                    </h6>
+                                    </p>
                                 </div>
                             </a>
                     </li>
                     <li class="nav-item ms-auto">
                         <a class="nav-link px-2" href="forfun.html">
                             <div class="nav-shape forfun px-3">
-                                <div class="text-forfun">
-                                    <h6>For Fun</h6>
-                                </div>
+                                <p class="nav-text text-forfun">
+                                    For Fun
+                                </p>
                             </div>
                         </a>
                     </li>
@@ -82,57 +69,91 @@
         </div>
     </nav>
 
+    <section id="sidebar">
 
-    <!-- services section-->
+        <aside class="title">
+            <div class="title">
+                <p class="side-title research">Research Experience</p>
+            </div>
+        </aside>
+
+        <nav class="sidenav-right">
+            <div class="next-box" OnClick="location.href ='forfun.html'">
+                <p class="arrow next">→</p>
+            </div>
+        </nav>
+
+    </section>
+
+
+
+
+
+
+
+
     <section id="research">
-        <div class="container">
-            <h1 class="text-center my-5">Research Experience</h1>
-            <div class="row mx-5">
 
-                <div class="col-lg-4 mt-4" OnClick="location.href ='research/urp.html'">
-                        <div class="research-item servicesText">
-                            <div class="card-body my-4">
-                                <i class="fas servicesIcon fa-regular fa-handshake"></i>
-                                <h4 class="card-title mt-3">An Analytical Study of University-Community Partnership</h4>
-                                <p class="card-text mt-3">
-                                    I worked on this research paper as a team with two other colleagues and participated in the entire process from developing research plans to conducting research and analysis.
-                                </p>
-                            </div>
-                        </div>  
-                    </a>
+        <div class="row justify-content-center">
+
+            <div class="row justify-content-center py-2">
+                
+                <div class="item research-item col-8 py-2 me-1"  OnClick="location.href ='research/earthquake.html'">
+                    <div class="title research-title">
+                        <p class="VR">Developing Earthquake VR for Design Research</p>
+                    </div>
+                    <div class="thumbnail-container d-flex justify-content-center">
+                        <img class="thumbnail vr-thumbnail my-2 mx-2" src="../assets/img/research/earthquake/vr1.png" style="width: 40%">
+                        <img class="thumbnail vr-thumbnail my-2 mx-2" src="../assets/img/research/earthquake/vr2.png" style="width:40%">
+                    </div>
+                    <!-- <div class="item-summary">
+                        <p class="item-summary-text">
+                            I developed a virtual reality earthquake simulation program for a design research. 
+                                The program was used to test the design of mobile applications in a simulated earthquake setting.
+                         
+                        </p>
+                    </div> -->
+                    
+                    
                 </div>
 
+                <div class="item research-item col-2 py-2"></div>
+    
+            </div>
 
-                <div class="col-lg-4 mt-4" OnClick="location.href='research/midlife.html'"> 
-                    <div class="research-item servicesText">
-                        <div class="card-body my-4">
-                            <i class="fas servicesIcon fa-solid fa-building"></i>
-                            <h4 class="card-title mt-3">Policy Analysis - <br> MidLife Employment Center</h4>
-                            <p class="card-text mt-3">
-                                This is an in-depth report on Midlife Employment Center in South Korea. 
+            <div class="row justify-content-center py-2">
+                <div class="item research-item col-5 py-2 mx-2"  OnClick="location.href ='research/midlife.html'">
+                    <div class="title research-title">
+                        <p class="midlife">Policy Analysis - MidLife Employment Center</p>
+                    </div>
+                    <!-- <div class="item-summary">
+                        <p class="item-summary-text">
+                            I worked on this research paper as a team with two other colleagues and participated in the entire process from developing research plans to conducting research and analysis.
+                        </p>
+                    </div> -->
+                    
+                </div>
+
+                <div class="item research-item col-5 py-2 mx-2"  OnClick="location.href ='research/urp.html'">
+                    <div class="title research-title">
+                        <p class="urp">An Analytical Study of University-Community Partnership</p>
+                    </div>
+                    <!-- <div class="item-summary">
+                        <p class="item-summary-text">
+                            This is an in-depth report on Midlife Employment Center in South Korea. 
                                 Authored by five undergraduate students, our team won the grand prize of 
                                 5,000,000 KRW in the policy analysis competition.
-                            </p>
-                        </div>
-                    </div>  
+                        </p>
+                    </div> -->
                 </div>
-
-
-                <div class="col-lg-4 mt-4" OnClick="location.href='research/earthquake.html'"> 
-                    <div class="research-item servicesText">
-                        <div class="card-body my-4">
-                            <i class="fas servicesIcon fa-solid fa-vr-cardboard"></i>
-                            <h4 class="card-title mt-3">Developing Earthquake VR <br>
-                                for Design Research</h4>
-                            <p class="card-text mt-3">
-                                I developed a virtual reality earthquake simulation program for a design research. 
-                                The program was used to test the design of mobile applications in a simulated earthquake setting.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
+    
+            </div>
         </div>
-    </section>
+</section>
+
+    
+
+
 
     <!-- load javascript after loading all html content -->
     <script src="../assets/js/main.js"></script>

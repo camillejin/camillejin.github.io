@@ -2,12 +2,23 @@
 const header = document.querySelector('.navbar');
 const shapeItems = document.querySelectorAll('.nav-shape');
 const imageHolder = document.getElementById('displayImage');
+const seungyun = document.querySelector('.seungyun');
 
 const path = window.location.pathname;
 const pathList = path.split(/[./]/);
 pathList.shift();
 pathList.shift();
 const page = pathList.shift();
+
+if (page=="projects") {
+    seungyun.classList.add("projects");
+}
+if (page=="research") {
+    seungyun.classList.add("research");
+}
+if (page=="forfun") {
+    seungyun.classList.add("forfun");
+}
 
 shapeItems.forEach(function(thisItem) {
     if (thisItem.classList.contains(page)) {

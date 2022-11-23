@@ -21,6 +21,7 @@
   </head>
   <body>
 
+    <!--
     <nav class="sidenav-left">
         <div class="prev-box" OnClick="location.href ='research.html'">
             <h1 class="arrow prev">←</h1>
@@ -32,6 +33,7 @@
             <h1 class="arrow next">→</h1>
         </div>
     </nav>
+-->
 
 
 
@@ -40,7 +42,7 @@
         <div class="container">
 
             <a class="navbar-brand" href="../index.html">
-                <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
+                <p class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</p>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,27 +53,27 @@
                     <li class="nav-item ms-auto active">
                             <a class="nav-link px-2" href="projects.html">
                                 <div class="nav-shape projects px-3">
-                                    <h6 class="text-projects">
+                                    <p class="nav-text text-projects">
                                         My Projects
-                                    </h6>
+                                    </p>
                                 </div>
                             </a>
                     </li>
                     <li class="nav-item ms-auto">
                             <a class="nav-link px-2" href="research.html">
                                 <div class="nav-shape research px-3">
-                                    <h6 class="text-research">
+                                    <p class="nav-text text-research">
                                         Research Experience
-                                    </h6>
+                                    </p>
                                 </div>
                             </a>
                     </li>
                     <li class="nav-item ms-auto">
                         <a class="nav-link px-2" href="forfun.html">
                             <div class="nav-shape forfun px-3">
-                                <div class="text-forfun">
-                                    <h6>For Fun</h6>
-                                </div>
+                                <p class="nav-text text-forfun">
+                                    For Fun
+                                </p>
                             </div>
                         </a>
                     </li>
@@ -81,43 +83,84 @@
         </div>
     </nav>
 
-    <!-- portfolio section-->
-    <section id="forfun">
-        <div class="container">
-            <h1 class="text-center my-5">For Fun</h1>
 
-            <div class="row justify-content-center mx-5">
+    <section id="sidebar">
 
-                <div class="col-4" OnClick="location.href ='forfun/poster.html'"> 
-                    <div class="card servicesText forfun">
-                        <div class="d-flex flex-column my-4 mx-auto">
-                            <img class="align-self-center" src="../assets/img/forfun/poster.png" alt="Card image" style="width:60%">
-                            <h6 class="align-self-center pt-3 forfun">Poster Design</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4" OnClick="location.href ='forfun/film.html'"> 
-                    <div class="card servicesText forfun">
-                        <div class="d-flex flex-column my-auto mx-auto">
-                            <img class="align-self-center" src="../assets/img/forfun/film_mirror.png" alt="Card image" style="width:80%">
-                            <h6 class="align-self-center pt-2 forfun">Film Gallery</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4" OnClick="location.href ='forfun/poster.html'"> 
-                    <div class="card servicesText forfun py-4 align-items-center">
-                            <img class="card-img-top pt-3 px-3" src="../assets/img/forfun/film_mirror.png" alt="Card image" style="width:70%">
-                            <div class="card-body">
-                                <h6 class="card-title forfun">Film Gallery</h6>
-                            </div>
-                    </div>
-                </div>
+        <aside class="title">
+            <div class="title">
+                <p class="side-title forfun">For Fun</p>
             </div>
+        </aside>
 
-            <br>
+        <nav class="sidenav-right">
+            <div class="next-box" OnClick="location.href ='projects.html'">
+                <p class="arrow next">→</p>
+            </div>
+        </nav>
+
     </section>
+
+
+
+
+    <section id="forfun">
+
+        <div class="row justify-content-center">
+
+            <div class="row justify-content-center py-2">
+
+                <div class="item forfun-item col-md-3 py-2 ms-1"  OnClick="location.href ='forfun/poster.html'">
+                    
+                    <div class="thumbnail-container mx-2 justify-content-center">
+                        <img class="thumbnail poster-thumbnail my-2 " src="../assets/img/forfun/poster.png" alt="Card image" style="width:100%">
+                    </div>
+
+                    <div class="title forfun-title align-self-end text-center justify-content-center">
+                        <p class="poster">Poster Design</p>
+                    </div>
+                    
+                </div>
+
+                <div class="item forfun-item row align-items-center col-md-7 py-2 ms-4"  OnClick="location.href ='forfun/film.html'">
+                    
+                    <div class="thumbnail-container col-10 d-flex justify-content-center">
+                        <img class="align-self-center" src="../assets/img/forfun/film_mirror.png" alt="Card image" style="width:100%">
+                    </div>
+                    <div class="title forfun-title col-2">
+                        <p class="film">Film Gallery</p>
+                    </div>
+                    <!-- <div class="item-summary">
+                        <p class="item-summary-text">
+                            I worked on this research paper as a team with two other colleagues and participated in the entire process from developing research plans to conducting research and analysis.
+                        </p>
+                    </div> -->
+                    
+                </div>
+
+            </div>
+                
+            <div class="row justify-content-center py-2">
+
+                <div class="item forfun-item col-md-4 py-2 ms-1" ></div>
+
+                <div class="item forfun-item col-md-6 py-2 ms-4"  OnClick="location.href ='forfun/library.html'">
+                    <div class="title forfun-title">
+                        <p class="urp">Your Library</p>
+                    </div>
+                    <div class="item-summary">
+                        <p class="item-summary-text">
+                            This is an in-depth report on Midlife Employment Center in South Korea. 
+                                Authored by five undergraduate students, our team won the grand prize of 
+                                5,000,000 KRW in the policy analysis competition.
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+</section>
+
+
 
     <!-- load javascript after loading all html content -->
     <script src="../assets/js/main.js"></script>

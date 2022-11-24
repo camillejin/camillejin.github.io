@@ -1,8 +1,16 @@
 :root {
     --project-color: rgb(155, 181, 84);
     --research-color: rgb(33, 188, 235);
-    --forfun-color: rgb(97, 46, 121);
+    --forfun-color: rgb(123, 53, 136);
     --seungyun-color: rgb(210, 199, 39);
+}
+@font-face {
+    font-family: tangoBold;
+    src: url(fonts/TangoSans_Bold.ttf);
+}
+@font-face {
+    font-family: kodak;
+    src: url(fonts/kodakku.ttf);
 }
 @font-face {
     font-family: couture;
@@ -46,7 +54,17 @@ font-family: montHeavy;
 }
 
 
-/*Seungyun - title of the website*/
+
+
+
+
+
+
+
+
+
+
+/*Main Page title of the website--------------------------------------*/
 .seungyun {
     font-family: Helvetica;
     font-size: 2.275rem;
@@ -63,11 +81,6 @@ font-family: montHeavy;
 .seungyun.forfun {
     color: var(--forfun-color);
 }
-
-.home {
-    background: white;
-}
-
 
 /* text css above hero image*/
 .hero_title {
@@ -87,20 +100,32 @@ font-family: montHeavy;
     text-shadow: 3px 3px 3px lightgray;
 }
 
-.intro-3 {
+.intro-text {
     text-justify: auto;
-    font-family: Geneva, Verdana, sans-serif;
-    font-size: 0.9rem;
-    color: rgb(100, 100, 100);
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    color: rgb(63, 63, 63);
 }
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -109,52 +134,64 @@ font-family: montHeavy;
 
 
 /* nav bar -----------------------------------------------------------*/
-.navbar .container {
-    margin-top: 20px;
+.navbar.fixed-top {
+    position: fixed;
+    transition: top 0.3s;
 }
 
-.research-page .navbar{
+.home .navbar {
     background: rgb(210, 199, 39);
     border: 0.25rem solid black;
 }
-.research-page .seungyun {
-    color: var(--research-color);
-    text-shadow: 1px 1px 1px black;
+.home .seungyun {
+    color: rgb(57, 57, 57);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
-.nav-link .nav-shape {
-    color: rgb(0, 0, 0);
-    
-}
 .nav-shape .nav-text {
-    font-family: Helvetica, 'Times New Roman', 'Helvetica Neue';
-    font-size: 1.25rem;
+    font-family: "Helvetica Neue" Avenir;
+    font-size: 1.20rem;
     text-align: center;
+    color: rgb(57, 57, 57);
+    text-shadow: 1px 1px 1px black;
     
 }
+.projects-page  .nav-text {
+    text-shadow: 1px 1px 1px black;
+    color: var(--project-color);
+}
+.research-page .nav-text {
+    text-shadow: 1px 1px 1px black;
+    color: var(--research-color);
+}
+.forfun-page .nav-text {
+    text-shadow: 1px 1px 1px black;
+    color: var(--forfun-color);
+}
+
+
 .nav-link:hover .nav-shape {
-    text-shadow: 2px 1px 1px lightgray;
+    font-style: oblique;
 }
-.nav-shape.projects.colored {
-    font-style:  oblique;
-    /*text-shadow: 1px 1px 1px gray;*/
-    /* border: 0.2rem solid var(--project-color); */
-    /* background-color: var(--project-color); */
-}
-.nav-shape.research.colored {
+.nav-shape.projects.colored .nav-text{
     font-style:  oblique;
     /*text-shadow: 1px 1px 1px gray;*/
     border-bottom: 0.2rem solid black;
 }
-.nav-shape.forfun.colored {
+.nav-shape.research.colored .nav-text{
     font-style:  oblique;
     /*text-shadow: 1px 1px 1px gray;*/
-    border-bottom: 0.2rem solid var(--forfun-color);
+    border-bottom: 0.2rem solid black;
+}
+.nav-shape.forfun.colored  .nav-text{
+    font-style:  oblique;
+    /*text-shadow: 1px 1px 1px gray;*/
+    border-bottom: 0.2rem solid black;
 }
 
 .menu-button-text {
     color: var(--seungyun-color);
-    text-shadow: 1px 0.5px 0.5px black;
+    text-shadow: 2px 1px 1px black;
 }
 .menu-button {
     color: transparent;
@@ -316,6 +353,12 @@ font-family: montHeavy;
 .title .urp{
     font-family: couture;
 }
+.title .film{
+    font-family: kodak;
+}
+.title .poster{
+    font-family: tangoBold;
+}
 .thumbnail {
     width: 100%;
     max-width: 800px;
@@ -342,6 +385,9 @@ font-family: montHeavy;
 
 .project-title {
     font-size: 2rem;
+}
+.project-item.empty {
+    background-color: var(--project-color);
 }
 
 
@@ -400,26 +446,34 @@ font-family: montHeavy;
 .research-earthquake {
     background-color: var(--research-color);
 }
-.research-earthquake .seungyun {
+.research-earthquake .seungyun{
     color: var(--seungyun-color);
     text-shadow: 1px 1px 1px black;
 }
+.research-earthquake .nav-text{
+    color: var(--seungyun-color);
+    text-shadow: 1px 1px 1px black;
+}
+
 #earthquake {
     margin-top: 300px;
 }
 #earthquake .body {
     text-align: justify;
-    font-weight: lighter;
 }
 #earthquake .body-white {
     background: white;
 }
 
 
-#earthquake .body-text {
-    font-size: 1.1rem;
+#earthquake, #midlife, #poster .body-text {
+    font-family: sans-serif;
+    font-size: 1rem;
     line-height: 2rem;
+    font-weight: lighter;
 }
+
+
 .research-earthquake .img-me {
     position: absolute;
     top: 40px;
@@ -430,7 +484,7 @@ font-family: montHeavy;
 
 .img-vr {
     position: absolute;
-    top: 170px;
+    top: 160px;
     left:0;
     margin-left: 55%;
     width: 200px;
@@ -446,6 +500,8 @@ font-family: montHeavy;
 .footnote {
     padding-top: 100px;
     text-align: center;
+    font-family: "Times new roman";
+    font-weight: 300;
 }
 
 .gif-vr {
@@ -501,7 +557,11 @@ font-family: montHeavy;
 
 
 
-/* forfun detail page ------------------------------------------------*/
+/* forfun page ------------------------------------------------*/
+.thumbnail.poster-thumbnail {
+    width: 200px;
+}
+
 
 .servicesText.card.forfun {
     max-height: 450px;
@@ -520,7 +580,12 @@ font-family: montHeavy;
 }
 
 
-/*------------------------------------------------------------------------*/
+/*forfun-film------------------------------------------------------------------------*/
+
+#film .title {
+    font-family: kodak;
+    font-size: 2.45rem;
+}
 
 
 
@@ -560,13 +625,10 @@ font-family: montHeavy;
 /* spacing on all sections */
 #forfun, #projects, #research, #contact, #urp, #midlife, 
 #film, #About, #home, #color, #poster, #bottom {
-    margin-top: 5rem;
-    padding-top: 5rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
 }
 
-#earthquake .body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, monospace;
-}
 #urp .body {
     font-family: 'Monaco', 'Lucida Console', 'Courier New', monospace;
 

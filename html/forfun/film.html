@@ -20,7 +20,7 @@
     </script>
   </head>
 
-  <body>
+  <body class="film-page">
 
     <nav class="sidenav-left">
         <a href="poster.html">
@@ -35,12 +35,16 @@
     </nav>
 
 
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <nav id="navbar" class="navbar forfun-page navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
 
             <a class="navbar-brand" href="../../index.html">
                 <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
             </a>
+
+            <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <p class="nav-text">MENU</p>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -87,14 +91,18 @@
 
     <section id="film">
         <div class="row align-items-center text-center">
-            <h1 class="display-6">Film Gallery</h1>
+            <p class="title">Film Gallery</p>
         </div>
 
+        <!--big frame-->
         <div class="row mx-5 justify-content-center">
-            <img id="displayImage" class="" src="../../assets/img/forfun/film_mirror_big.svg" alt="gallery-main" 
-                    style="width:70%">
+            <img id="displayImage" class="py-3" src="../../assets/img/forfun/film_mirror_big.svg" alt="gallery-main" 
+                    style="width:650px;">
         </div>
-        <div class="row pt-3 justify-content-center">
+
+
+        <!--small frames-->
+        <div class="row my-5 justify-content-center">
             <div class="col-1">
                 <img class="miniItem" src="../../assets/img/forfun/film_mirror.svg" onmouseover="hover(this);" style="width:100%" alt="gallery-mini-1">
             </div>
@@ -118,9 +126,16 @@
 
         </div>
 
+
+
     </section>
 
-    <br><br>
+    <section id="footer" style="background:var(--forfun-color);">
+        <div class="row">
+            <br><br><br><br><br><br>
+        </div>
+    </section>
+
 
     <!-- load javascript after loading all html content -->
     <script src="../../assets/js/main.js"></script>

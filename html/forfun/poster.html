@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>URP</title>
+    <title>For Fun</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../assets/css/styles.css" rel="stylesheet">
@@ -20,22 +20,22 @@
     </script>
   </head>
 
-  <body>
+  <body class="poster-page">
 
     <nav class="sidenav-left">
-        <div class="prev-box" OnClick="location.href ='library.html'">
-            <h1 class="arrow prev">←</h1>
-        </div>
+        <a href="poster.html">
+            <div class="triangle prev"></div>
+        </a>
     </nav>
 
     <nav class="sidenav-right">
-        <div class="next-box" OnClick="location.href ='film.html'">
-            <h1 class="arrow next">→</h1>
-        </div>
+        <a href="poster.html">
+            <div class="triangle next"></div>
+        </a>
     </nav>
 
 
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <nav id="navbar" class="navbar forfun-page navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
 
             <a class="navbar-brand" href="../../index.html">
@@ -44,32 +44,31 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
+                <ul class="navbar-nav ms-auto justify-content-end">
+                    <li class="nav-item ms-auto active">
                             <a class="nav-link px-2" href="../projects.html">
-                                <div class="nav-shape nav-circle projects">
-                                    <p class="nav-text">
-                                        My <br> Projects
+                                <div class="nav-shape projects px-3">
+                                    <p class="nav-text text-projects">
+                                        My Projects
                                     </p>
                                 </div>
                             </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ms-auto">
                             <a class="nav-link px-2" href="../research.html">
-                                <div class="nav-shape nav-square research">
-                                    <p class="nav-text">
-                                        Research <br> Experience
+                                <div class="nav-shape research px-3">
+                                    <p class="nav-text text-research">
+                                        Research Experience
                                     </p>
                                 </div>
                             </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ms-auto">
                         <a class="nav-link px-2" href="../forfun.html">
-                            <div class="triangle-container">
-                                <div class="nav-shape nav-triangle forfun"></div>
-                                <div class="nav-text">
-                                    <p>For<br>Fun</p>
-                                </div>
+                            <div class="nav-shape forfun px-3">
+                                <p class="nav-text text-forfun">
+                                    For Fun
+                                </p>
                             </div>
                         </a>
                     </li>
@@ -80,77 +79,64 @@
     </nav>
 
     <section id="poster">
-        <div class="row align-items-center text-center pt-5">
-            <h1 class="display-6 pt-5">Poster Design</h1>
+        <div class="row align-items-center text-center py-5">
+            <div class="title">
+                <p class="poster" style="font-size:3rem;">Poster Design</p>
+            </div>
         </div>
 
-        <hr class="mx-3 borderline" size="3">
 
 
-        <div class="row justify-content-center">
+    
+        <div class="row align-items-center justify-content-center mb-5">
 
-            <div class="col-lg-4 d-flex justify-content-center">
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-3">
+                <p class="body-text">
+                    This poster is designed for an early Christmas party that I hosted. 
+                    The party “We Are Almost There” celebrates the end of something ahead of time. 
+                    I tried to capture this premature attitude and playfulness of the party through the bright and tinted background colors.
+                    The colors were chosen to remind people of the Christmas tree along with the stair-shaped rectangles. 
+                    They also represent the front-view of the building where the party is held. 
+                </p>
+            </div>
+
+            <div class="col-md-2">
                 <div class="align-self-center d-flex justify-content-center">
-                    <img class="card-img-top" src="../../assets/img/forfun/poster.png" 
+                    <img class="card-img-top" src="../../assets/img/forfun/poster.svg" 
                     alt="Card image" style="width:90%">
                 </div>
             </div>
-            <div class="col-lg-4 d-flex py-3 justify-content-center">
+
+            <div class="col-md-3">
+
+            </div>
+        </div>
+
+
+        <div class="row align-items-center justify-content-center mb-5">
+
+            
+            <div class="col-md-2">
                 <div class="align-self-center d-flex justify-content-center">
-                    <img class="card-img-top" src="../../assets/img/forfun/building.png" 
-                    alt="Card image" style="width:80%">
+                    <img class="card-img-top" src="../../assets/img/forfun/building.svg" 
+                    alt="Card image" style="width:90%">
                 </div>
             </div>
-        </div>
 
-
-        
-
-        <div class="mx-auto py-3 my-5">
-            <div class="square mx-auto">
-                <div class="triangle-container">
-                    <div class="motivation triangle"></div>
-                    <p class="text">Inspiration</p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row align-items-center text-center">
-            <div class="body">
-                <p>
-                    This poster is designed for an early Christmas party that I hosted. <br>
-                    The party “We Are Almost There” celebrates the end of something ahead of time. <br>
-                    I tried to capture this premature attitude and playfulness of the party through the bright and tinted background colors.<Br>
-                    The colors were chosen to remind people of the Christmas tree along with the stair-shaped rectangles. <br>
-                    They also represent the front-view of the building where the party is held. 
-
-                    <br>
-                    <br>
-
-                    <!-- sketch! -->
-                    <br>
-                    <br>
-
-                    The building takes significance in this party as I, <br>
-                    the host of this party have lived in the house that existed prior to this new building. <br>
-                    My mother, who owns the building also have lived in the same house since she was a child. <br>
-                    The design shows the mixed sentiments and hopes I have regarding this construction. <br>
+            <div class="col-md-3">
+                <p class="body-text">
+                    The building takes significance in this party as I, 
+                    the host of this party have lived in the house that existed prior to this new building. 
+                    My mother, who owns the building also have lived in the same house since she was a child.
+                    The design shows the mixed sentiments and hopes I have regarding this construction. 
                     The QR code on the top of the Christmas tree is both for the top ornament and RSVP.
-
                 </p>
             </div>
         </div>
-
-
-
-
-
-
-        
-
-
-    <br><br><br><br><br>
 
     <!-- load javascript after loading all html content -->
     <script src="../../assets/js/main.js"></script>

@@ -19,35 +19,24 @@
     gtag('config', 'UA-250066174-1');
     </script>
   </head>
-  <body>
 
-    <!--
-    <nav class="sidenav-left">
-        <div class="prev-box" OnClick="location.href ='research.html'">
-            <h1 class="arrow prev">←</h1>
-        </div>
-    </nav>
 
-    <nav class="sidenav-right">
-        <div class="next-box" OnClick="location.href ='projects.html'">
-            <h1 class="arrow next">→</h1>
-        </div>
-    </nav>
--->
+  <body class="forfun-page">
 
 
 
 
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
 
             <a class="navbar-brand" href="../index.html">
                 <p class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</p>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <p class="menu-button-text">MENU</p>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto justify-content-end">
                     <li class="nav-item ms-auto active">
@@ -109,10 +98,10 @@
 
             <div class="row justify-content-center py-2">
 
-                <div class="item forfun-item col-md-3 py-2 me-1"  OnClick="location.href ='forfun/poster.html'">
+                <div class="item forfun-item col-md-3 py-2 me-1 justify-content-center"  OnClick="location.href ='forfun/poster.html'">
                     
-                    <div class="thumbnail-container mx-2 justify-content-center">
-                        <img class="thumbnail poster-thumbnail my-2" src="../assets/img/forfun/poster.png" alt="Card image" style="width:100%">
+                    <div class="thumbnail-container d-flex justify-content-center">
+                        <img class="thumbnail poster-thumbnail" src="../assets/img/forfun/poster.svg" alt="Card image">
                     </div>
 
                     <div class="title forfun-title align-self-end text-center justify-content-center">
@@ -123,17 +112,12 @@
 
                 <div class="item forfun-item row align-items-center col-md-7 py-2 ms-2"  OnClick="location.href ='forfun/film.html'">
                     
-                    <div class="thumbnail-container col-10 d-flex justify-content-center">
+                    <div class="thumbnail-container col-8 d-flex justify-content-center">
                         <img class="align-self-center" src="../assets/img/forfun/film_mirror_big.svg" alt="Card image" style="width:100%">
                     </div>
-                    <div class="title forfun-title col-2">
+                    <div class="title forfun-title col-4">
                         <p class="film">Film Gallery</p>
                     </div>
-                    <!-- <div class="item-summary">
-                        <p class="item-summary-text">
-                            I worked on this research paper as a team with two other colleagues and participated in the entire process from developing research plans to conducting research and analysis.
-                        </p>
-                    </div> -->
                     
                 </div>
 

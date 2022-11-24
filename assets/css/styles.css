@@ -426,42 +426,8 @@ font-family: montHeavy;
     color: black;
 }
 
-
-
-.triangle {
-    background: transparent;
-    width: 0;
-    height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 60px solid rgba(173, 216, 230, 0.5);
-}
-
-
-
-
-
-
-
-
-
-
-.motivation.triangle {
-    background: transparent;
-    border-left: 55px solid transparent;
-    border-right: 55px solid transparent;
-    border-top: 110px solid rgb(255, 251, 185);
-}
-
-.triangle-container .text {
-    position: absolute;
-    top:8px;
-    left: 19px;
-}
-
-
-
 .miniItem:hover {
+    width: 300px;
     cursor: pointer;
 }
 
@@ -492,20 +458,6 @@ font-family: montHeavy;
 
 
 
-
-
-
-
-/* about section image css
-.imageAboutPage {
-    width: 100%;
-}
-
-display background color black on navbar scroll
-.navbarScroll.navbarDark {
-    background-color: lightblue;
-}
-*/
 
 .fab {
     color: #000000;

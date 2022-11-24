@@ -35,7 +35,7 @@ shapeItems.forEach(function(thisItem) {
 });
 
 function hover(element) {
-    imageHolder.setAttribute('src', element.getAttribute('src'));
+    imageHolder.setAttribute('src', element.getAttribute('src').slice(0, -4)+"_big.svg");
 }
 
 function changeText(element, text) {

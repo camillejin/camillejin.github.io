@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Earthquake</title>
+    <title>Seungyun</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../assets/css/styles.css" rel="stylesheet">
@@ -21,20 +21,7 @@
     </script>
   </head>
 
-  <body>
-
-    <nav class="sidenav-left">
-        <div class="prev-box" OnClick="location.href ='midlife.html'">
-            <h1 class="arrow prev">←</h1>
-        </div>
-    </nav>
-
-    <nav class="sidenav-right">
-        <div class="next-box" OnClick="location.href ='urp.html'">
-            <h1 class="arrow next">→</h1>
-        </div>
-    </nav>
-
+  <body class="research-earthquake">
 
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
@@ -43,37 +30,36 @@
             </a>
 
             <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
+                <p class="menu-button-text">MENU</p>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="nav ms-auto justify-content-end">
-
-                    <li class="nav-item active">
-                        <a class="nav-link px-2" href="../projects.html">
-                            <div class="nav-shape nav-circle projects">
-                                <p class="text-projects">
-                                    My <br> Projects
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link px-2" href="../research.html">
-                                <div class="nav-shape nav-circle research">
-                                    <p class="text-research">
-                                        Research <br> Experience
+                    <li class="nav-item ms-auto active">
+                            <a class="nav-link px-2" href="../projects.html">
+                                <div class="nav-shape projects px-3">
+                                    <p class="nav-text text-projects">
+                                        My Projects
                                     </p>
                                 </div>
                             </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-2" href="../forfun.html">
-                            <div class="nav-shape nav-circle forfun">
-                                <div class="text-forfun">
-                                    <p>For<br>Fun</p>
+                    <li class="nav-item ms-auto">
+                            <a class="nav-link px-2" href="../research.html">
+                                <div class="nav-shape research px-3">
+                                    <p class="nav-text text-research">
+                                        Research Experience
+                                    </p>
                                 </div>
+                            </a>
+                    </li>
+                    <li class="nav-item ms-auto">
+                        <a class="nav-link px-2" href="../forfun.html">
+                            <div class="nav-shape forfun px-3">
+                                <p class="nav-text text-forfun">
+                                    For Fun
+                                </p>
                             </div>
                         </a>
                     </li>
@@ -83,126 +69,182 @@
         </div>
     </nav>
 
+    <img class="img-me" src="../../assets/img/research/earthquake/vr_me.svg" alt="me" style="height:200px">
+
+    <img class="img-vr" src="../../assets/img/research/earthquake/vr2.png" alt="Card image">  
+
+
+    <section id="sidebar">
+
+
+        <nav class="sidenav-left">
+            <div class="prev-box" OnClick="location.href ='urp.html'">
+                <p class="arrow prev">←</p>
+            </div>
+        </nav>
+
+
+        <nav class="sidenav-right">
+            <div class="next-box" OnClick="location.href ='midlife.html'">
+                <p class="arrow next">→</p>
+            </div>
+        </nav>
+
+    </section>
+
+
     <section id="earthquake">
-        <div class="row align-items-center text-center mt-5">
-            <h1 class="display-6 py-5">Developing Earthquake VR for Design Research</h1>
-        </div>
-        <div class="mx-auto pb-3">
-            <div class="square mx-auto d-flex justify-content-center">
-                <div class="motivation square align-self-center">
-                    <p class="mt-4">Description</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="body px-5 d-flex justify-content-center">
-                <p class="py-5 text-center">
-                    During the summer of 2022, I interned at the Digital Media Lab, Yonsei University. <br>
-                    I took on the role of developing an earthquake simulation VR, <br>
-                     which will be used for experiment in a design research. <br>
-                    The research aimed to test the different designs of mobile application that were <br>
-                     developed in order to help people with evacuation when earthquake occurs. <br>
-                    The program was required to observe the subjects' behavior in a simulated earthquake. <br>
-                    (This research was a national research project.)<br>
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="square mx-auto py-auto d-flex justify-content-center">
-                <div class="process square align-self-center">
-                    <p class="mt-4">Process</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="py-3 d-flex justify-content-center">
-                <div class="align-self-center d-flex justify-content-center">
-                    <img class="card-img-top" src="../../assets/img/research/earthquake/eq_research.png" 
-                    alt="Card image" style="width:50%">
-                </div>
-            </div>
-        </div>
-
-
         
-
-        <div class="row">
-            <div class="body px-5 py-5 d-flex justify-content-center">
-
-                <p class="text-center">
-                    Prior to the actual development, I collected visual data on how the earthquake should appear. <br>
-                    I did a brief research on the effects of earthquakes according to the intensities <br>
-                     and collected video clips for reference. This helped in making sure that the lead researchers <br>
-                     and I were on the same page. After selecting the intensity level of the earthquke simulation program, <br>
-                    based on the reference clips, I made a list of Unity assets that would be required for the program. <br>
-                    The assets were then implemented onto the program to simulate earthquake. <br>
-                    I wrote C# scripts, created timeline, and tested with Oculus Quest 2 for fine-tuning. <br>
-                    During the process, So Yeon Kim and other Graduate students at the lab provided excellent advice and support. <br>
-
-                </p>
-            </div>
-        </div>
-
-
-
-        <div class="d-flex justify-content-center">
-            <div class="align-self-center d-flex justify-content-center">
-                <img class="card-img-top img-vr" src="../../assets/img/research/earthquake/vr_me.png" alt="Card image">
-            </div>
-        </div>
 
         <div class="row align-items-center text-center">
-            <div class="body">
-                <p>
-                    
+            <p class="earthquake-title" style="font-family:bebas;font-size:2.5rem;">Developing Earthquake VR for Design Research</p>
+        </div>
+
+
+        <div class="row">
+            <div class="body body-white px-5 py-5 d-flex justify-content-center">
+                <p class="body-text col-md-7 align-self-center">
+                    During the summer of 2022, I interned at the Digital Media Lab, Yonsei University.
+                    I was responsible for developing an earthquake simulation VR,
+                     which will be used for an experiment in a design research.
+                    The research aimed to test the different designs of mobile application that were
+                     developed in order to help people with evacuation when earthquake occurs.
+                    The program was required to observe the subjects' behavior in a simulated earthquake.
+                </p>
+
+            </div>
+        </div>        
+
+        <div class="row">
+            <div class="body body-white px-5 d-flex justify-content-center">
+                <p class="body-text col-md-7">
+                    Prior to the actual development, I collected visual data on how the earthquake should appear.
+                    I did a brief research on the effects of earthquakes according to the intensities and collected video clips for reference.
+                    This helped in making sure that the lead researchers and I were on the same page.
+                    After selecting the intensity level of the earthquke simulation program, based on the reference clips,
+                     I made a list of Unity assets that would be required for the program. 
+                    The assets were then implemented onto the program to simulate earthquake. I wrote C# scripts,
+                     created timeline, and tested with Oculus Quest 2 for fine-tuning. During the process, So Yeon Kim 
+                     and other Graduate students at the lab provided excellent advice and support.
+
                 </p>
             </div>
         </div>
 
 
-        <div class="mx-auto pb-3 pt-5">
-            <div class="square mx-auto d-flex justify-content-center">
-                <div class="result square align-self-center">
-                    <p class="mt-4">Result</p>
+        <!--table-->
+        <div class="row">
+            <div class="body body-white py-3 mb-5 d-flex justify-content-center">
+                <div class="align-self-center mb-5 d-flex justify-content-center">
+                    <img class="card-img-top" src="../../assets/img/research/earthquake/eq_research.png" 
+                    alt="brief research" style="width:50%">
                 </div>
             </div>
         </div>
 
-        <div class="mx-auto d-flex justify-content-center">
-            <div class="align-self-center">
-                <img class="card-img-top img-vr" src="../../assets/img/research/earthquake/vr1.png" alt="Card image">
-            </div>
-        </div>
-
-        <div class="mx-auto d-flex justify-content-center">
-            <div class="align-self-center">
-                <img class="card-img-top img-vr" src="../../assets/img/research/earthquake/vr2.png" alt="Card image">  
-            </div>
-        </div>
 
 
 
 
+        <div class="row justify-content-center">
 
-
-
-        
-        <div class="d-flex justify-content-center">
-            <div class="align-self-center d-flex justify-content-center">
-            </div>
-        </div>
-
-        <div class="row"></div>
-
-        <div class="row align-items-center my-5">
-            <div class="text-center">
-                <p class="small">
+            <div class="body col-md-5 align-self-center">
+                <p class="body-text px-5">
+                    In order to simulate the earthquake, the shaking effect was added to the camera, instead of the surrounding assets. 
+                    Then different assets were implemented and tested out.
                 </p>
-                
             </div>
+            <div class="col-md-5 align-self-center d-flex justify-content-center py-5">
+                <img class="unity_streetlight" src="../../assets/img/research/earthquake/unity_camera.svg" 
+                alt="unity_streetlight">
+            </div>
+        </div>
+
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-5 align-self-center my-5 d-flex justify-content-center">
+                <img class="unity_streetlight" src="../../assets/img/research/earthquake/unity_sound.svg" 
+                alt="unity_streetlight" style="width:300px">
+            </div>
+            <div class="body col-md-5 align-self-center px-5">
+                <p class="body-text">
+                    Sound effects including the screams, footsteps, traffics, etc. were also added into the timeline. 
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="row justify-content-center ali">
+            <div class="body col-md-5 align-self-center px-5 my-5 ">
+                <p class="body-text align-self-center">
+                    According to the reference video clips of our choice of intensity, parts of the walls were breaking down from the buildings. 
+                    However, it was difficult to modify the pre-built building assets. 
+                    Instead, I added dust and debris effects on the wall so that it looks as if the debris were falling from the wall. 
+                    I was also able to write a script that causes the streetlights to fall. 
+                </p>
+            </div>
+            <div class="col-md-5 align-self-center mb-5 d-flex justify-content-center">
+                <img class="unity_streetlight" src="../../assets/img/research/earthquake/unity_streetlight.svg" 
+                alt="unity_streetlight" style="width:400px">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="row body-white align-items-center justify-content-center">
+            <div class="body col-md-7 px-5 pt-5 body-white">
+                <p class=" result">
+                    Result!*
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="align-items-center body-white d-flex justify-content-center">
+                <div class="body col-md-7 body-white">
+                    <img class="gif-vr" src="../../assets/img/research/earthquake/earthquake_long.gif" alt="Earthquake VR.gif">  
+                    
+                    <p class="lag py-3" style="font-size:smaller">
+                        *The lag is from the free screen recording program, not the simulation vr
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="body-white row justify-content-center">
+            <div class="footnote col-md-8 pb-5 justify-content-center">
+                <p class="align-self-end">
+                    This research was a national research project.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="bottom">
+        <div class="body-white row">
+            <div class=""></div>
         </div>
     </section>
 

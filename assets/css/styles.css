@@ -1,7 +1,8 @@
 :root {
     --project-color: rgb(155, 181, 84);
-    --research-color: rgb(110, 182, 189);
-    --forfun-color: rgb(233, 155, 211);
+    --research-color: rgb(33, 188, 235);
+    --forfun-color: rgb(97, 46, 121);
+    --seungyun-color: rgb(210, 199, 39);
 }
 @font-face {
     font-family: couture;
@@ -47,10 +48,10 @@ font-family: montHeavy;
 
 /*Seungyun - title of the website*/
 .seungyun {
-    font-family: Arial;
-    font-weight: 200;
-    font-size: 3.75rem;
+    font-family: Helvetica;
+    font-size: 2.275rem;
     color: rgb(210, 199, 39);
+    text-shadow: 2px 1px 1px black;
 }
 
 .seungyun.projects {
@@ -61,10 +62,6 @@ font-family: montHeavy;
 }
 .seungyun.forfun {
     color: var(--forfun-color);
-}
-
-.seungyun:hover {
-    font-weight: 200;
 }
 
 .home {
@@ -83,11 +80,11 @@ font-family: montHeavy;
 .emoji {
     border-bottom: 2px solid rgb(210, 199, 39);
     color: rgb(210, 199, 39);
-    text-shadow: 3px 3px 3px lightgray;
+    text-shadow: 3px 3px 3px gray;
 }
 .emoji:hover {
-    text-shadow: none;
     border: none;
+    text-shadow: 3px 3px 3px lightgray;
 }
 
 .intro-3 {
@@ -112,15 +109,26 @@ font-family: montHeavy;
 
 
 /* nav bar -----------------------------------------------------------*/
+.navbar .container {
+    margin-top: 20px;
+}
+
+.research-page .navbar{
+    background: rgb(210, 199, 39);
+    border: 0.25rem solid black;
+}
+.research-page .seungyun {
+    color: var(--research-color);
+    text-shadow: 1px 1px 1px black;
+}
 
 .nav-link .nav-shape {
-    color: black;
+    color: rgb(0, 0, 0);
     
 }
 .nav-shape .nav-text {
-    font-family: Avenir, 'Times New Roman', 'Helvetica Neue';
-    font-size: 1.5rem;
-    font-weight: 200;
+    font-family: Helvetica, 'Times New Roman', 'Helvetica Neue';
+    font-size: 1.25rem;
     text-align: center;
     
 }
@@ -130,12 +138,13 @@ font-family: montHeavy;
 .nav-shape.projects.colored {
     font-style:  oblique;
     /*text-shadow: 1px 1px 1px gray;*/
-    border-bottom: 0.2rem solid var(--project-color);
+    /* border: 0.2rem solid var(--project-color); */
+    /* background-color: var(--project-color); */
 }
 .nav-shape.research.colored {
     font-style:  oblique;
     /*text-shadow: 1px 1px 1px gray;*/
-    border-bottom: 0.2rem solid var(--research-color);
+    border-bottom: 0.2rem solid black;
 }
 .nav-shape.forfun.colored {
     font-style:  oblique;
@@ -143,6 +152,13 @@ font-family: montHeavy;
     border-bottom: 0.2rem solid var(--forfun-color);
 }
 
+.menu-button-text {
+    color: var(--seungyun-color);
+    text-shadow: 1px 0.5px 0.5px black;
+}
+.menu-button {
+    color: transparent;
+}
 
 
 
@@ -159,9 +175,9 @@ font-family: montHeavy;
 
 
 .arrow {
-    font-family: Arial;
+    font-family: system-ui;
+    font-weight: 100;
     font-size: 3rem;
-    font-weight: bold;
 }
 
 .arrow:hover {
@@ -219,6 +235,9 @@ font-family: montHeavy;
         display: none;
     }
     #sidebar .sidenav-right {
+        display: none;
+    }
+    #sidebar .sidenav-left {
         display: none;
     }
   }
@@ -311,6 +330,8 @@ font-family: montHeavy;
 
 
 
+
+
 /* projects page -------------------------------------------------------*/
 
 .project-item:hover {
@@ -333,10 +354,18 @@ font-family: montHeavy;
 .research-title {
     font-size: 2rem;
 }
+.research-item.empty {
+    background-color: var(--research-color);
+}
 
 
 /* forfun page -------------------------------------------------------*/
 .forfun-item:hover {
+    text-shadow: 3px 2px 2px gray;
+    box-shadow: 3px 2px 2px gray;
+    background-color: var(--forfun-color);
+}
+.forfun-item.empty {
     text-shadow: 3px 2px 2px gray;
     box-shadow: 3px 2px 2px gray;
     background-color: var(--forfun-color);
@@ -347,23 +376,86 @@ font-family: montHeavy;
 
 
 
-/* research detail page */
 
-.motivation {
-    background-color:rgb(255, 251, 185);
-    text-align:center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* research-earthquake detail page ----------------------------------------------*/
+.research-earthquake {
+    background-color: var(--research-color);
+}
+.research-earthquake .seungyun {
+    color: var(--seungyun-color);
+    text-shadow: 1px 1px 1px black;
+}
+#earthquake {
+    margin-top: 300px;
+}
+#earthquake .body {
+    text-align: justify;
+    font-weight: lighter;
+}
+#earthquake .body-white {
+    background: white;
 }
 
-.process {
-    background-color:rgb(255, 227, 186);
+
+#earthquake .body-text {
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.research-earthquake .img-me {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    margin-left: 15%;
+    width: 100px;
+}
+
+.img-vr {
+    position: absolute;
+    top: 170px;
+    left:0;
+    margin-left: 55%;
+    width: 200px;
+}
+
+.img-vr-cover {
+    filter: drop-shadow(6px 3px 3px black);
+    min-width: 100px;
+    width: 300px;
+    height: 300px;
+}
+
+.footnote {
+    padding-top: 100px;
     text-align: center;
 }
 
-.result {
-    background-color:rgb(249, 207, 207);
-    text-align: center;
+.gif-vr {
+    width: 400px;
 }
 
+.unity_streetlight {
+    min-width: 50px;
+    max-width: 550px;
+}
 .servicesText.card {
     height: 355px;
     cursor: pointer;
@@ -374,10 +466,6 @@ font-family: montHeavy;
     width: 100%;
 }
 
-.img-vr{
-    width: 300px;
-    height: 300px;
-}
 
 .card-title {
     text-align: center;
@@ -470,14 +558,14 @@ font-family: montHeavy;
 
 
 /* spacing on all sections */
-#forfun, #earthquake, #projects, #research, #contact, #urp, #midlife, 
-#film, #About, #home, #color, #poster {
+#forfun, #projects, #research, #contact, #urp, #midlife, 
+#film, #About, #home, #color, #poster, #bottom {
     margin-top: 5rem;
     padding-top: 5rem;
 }
 
 #earthquake .body {
-    font-family: 'Monaco', 'Lucida Console', 'Courier New', monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, monospace;
 }
 #urp .body {
     font-family: 'Monaco', 'Lucida Console', 'Courier New', monospace;

@@ -628,7 +628,7 @@ font-family: montHeavy;
 
 /* spacing on all sections */
 #forfun, #projects, #research, #contact, #urp, #midlife, 
-#film, #About, #home, #color, #poster, #bottom, #library {
+#film, #About, #home, #color, #poster, #bottom, #library{
     margin-top: 4rem;
     padding-top: 4rem;
 }

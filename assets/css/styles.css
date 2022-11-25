@@ -359,6 +359,10 @@ font-family: montHeavy;
 .title .poster{
     font-family: tangoBold;
 }
+.title .library {
+    font-family: vogue;
+    font-weight: bold;
+}
 .thumbnail {
     width: 100%;
     max-width: 800px;
@@ -466,7 +470,7 @@ font-family: montHeavy;
 }
 
 
-#earthquake, #midlife, #poster .body-text {
+#earthquake, #midlife, #library, #poster .body-text {
     font-family: sans-serif;
     font-size: 1rem;
     line-height: 2rem;
@@ -624,7 +628,7 @@ font-family: montHeavy;
 
 /* spacing on all sections */
 #forfun, #projects, #research, #contact, #urp, #midlife, 
-#film, #About, #home, #color, #poster, #bottom {
+#film, #About, #home, #color, #poster, #bottom, #library {
     margin-top: 4rem;
     padding-top: 4rem;
 }

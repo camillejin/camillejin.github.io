@@ -35,77 +35,67 @@
         </div>
     </nav>
 
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <nav id="navbar" class="navbar projects-page navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
 
             <a class="navbar-brand" href="../../index.html">
                 <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
             </a>
 
-            <!--
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <p class="menu-button-text">MENU</p>
             </button>
-        -->
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
+                <ul class="nav ms-auto justify-content-end">
+                    <li class="nav-item ms-auto active">
                             <a class="nav-link px-2" href="../projects.html">
-                                <div class="nav-shape nav-circle projects">
-                                    <p class="text-projects">
-                                        My <br> Projects
+                                <div class="nav-shape projects px-3">
+                                    <p class="nav-text text-projects">
+                                        My Projects
                                     </p>
                                 </div>
                             </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ms-auto">
                             <a class="nav-link px-2" href="../research.html">
-                                <div class="nav-shape nav-circle research">
-                                    <p class="text-research">
-                                        Research <br> Experience
+                                <div class="nav-shape research px-3">
+                                    <p class="nav-text text-research">
+                                        Research Experience
                                     </p>
                                 </div>
                             </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ms-auto">
                         <a class="nav-link px-2" href="../forfun.html">
-                                <div class="nav-shape nav-circle forfun">
-                                <div class="text-forfun">
-                                    <p>For<br>Fun</p>
-                                </div>
+                            <div class="nav-shape forfun px-3">
+                                <p class="nav-text text-forfun">
+                                    For Fun
+                                </p>
                             </div>
                         </a>
                     </li>
                 </ul>
 
+
             </div>
         </div>
     </nav>
 
-    <section id="urp">
-        <div class="row align-items-center text-center px-3">
-            <h1 class="display-6 py-5">3D Music House
-            </h1>
+    <section id="cg">
+        <div class="row title align-items-center text-center px-3">
+            <p class="display-6 cg py-5">3D Music House</p>
         </div>
 
-        <div class="motivation-box px-5">
-            <div class="mx-auto pb-3">
-                <div class="square mx-auto d-flex justify-content-center">
-                    <div class="motivation square align-self-center">
-                        <p class="mt-4">Description</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="body d-flex justify-content-center text-center px-5 py-5">
-                <p class="body mx-5 px-5">
-                    “You are Home” was an individual final project for Computer Graphics, a course I took in Spring, 2022.  <br>
-                    The class covered the basics of graphic programming and OpenGL, including topics such as <br>
-                    shaders, transformation, texture, lighting, keyboard inputs, and model loading. <br>
-                      In addition to applying the techniques taught in class, I further explored <br>
+        <div class="row justify-content-center">
+            <div class="body col-7 my-5">
+                <p class="body body-text " style="text-align:justify;">
+                    “You are Home” was an individual final project for Computer Graphics, a course I took in Spring, 2022.
+                    The class covered the basics of graphic programming and OpenGL, including topics such as
+                    shaders, transformation, texture, lighting, keyboard inputs, and model loading.
+                      In addition to applying the techniques taught in class, I further explored
                       the use of audio libraries and Blender program to enhance the quality of the project.
                 </p>
             </div>
@@ -113,39 +103,33 @@
 
         <div class="row">
             <div class="align-self-center d-flex justify-content-center">
-                <img class="card-img-top" src="../../assets/img/projects/3d/3d.png" alt="Card image" style="width:90%">
+                <img class="card-img-top px-5 py-5" src="../../assets/img/projects/3d/cg.svg" alt="Card image" style="width:90%;max-width: 800px;">
             </div>
         </div>
     
 
-        <div class="row">
-            <div class="body d-flex justify-content-center text-center px-5">
-                <p class="body mx-5 px-5">
-                    The project was carried out when Harry Styles just released his new album “You are Home”. <br>
-                     While listening to the music and looking at the album cover, <br> I imagined myself in the room on the album art. <br>
-                      The project started from this. <br>
-                      The finished program allows users to enter and look around the room using keyboard inputs. <br>
-                      You can pause or play music using space bar. <br>
-                      In my program, royalty-free music was used instead of the music in the actual album. 
-                </p>
-            </div>
-        </div>
-
-        
-
-
-
-        <div class="row">
-            <div class="body d-flex justify-content-center text-center px-5">
-                <p class="body mx-5 px-5">
-                    In the future, I hope to further explore the possibilites of this project. 
-                    Through collaboration with musicians or artists, this may be an alternative to the physical album. 
+        <div class="row justify-content-center">
+            <div class="body col-7 my-5">
+                <p class="body body-text" style="text-align:justify;">
+                    The project was carried out when Harry Styles just released his new album “You are Home”.
+                     While listening to the music and looking at the album cover, I imagined myself in the room on the album art. 
+                      The project started from this. 
+                      The finished program allows users to enter and look around the room using keyboard inputs. 
+                      You can pause or play music using space bar. 
+                      For my program, royalty-free music was used instead of the music in the actual album. 
+                      In the future, I hope to further explore the possibilities of this project. 
+                      Collaboration with musicians or artists would be a dream come true!
                 </p>
             </div>
         </div>
 
 
+    </section>
 
+
+    <section id="footer">
+        <br><br><br><br>
+        <br>
     </section>
 
 

@@ -1,7 +1,7 @@
 :root {
-    --project-color: rgb(155, 181, 84);
-    --research-color: rgb(33, 188, 235);
-    --forfun-color: rgb(123, 53, 136);
+    --project-color: rgb(196, 233, 117);
+    --research-color: rgb(91, 204, 239);
+    --forfun-color: rgb(249, 202, 247);
     --seungyun-color: rgb(210, 199, 39);
 }
 @font-face {
@@ -68,8 +68,7 @@ font-family: montHeavy;
 .seungyun {
     font-family: Helvetica;
     font-size: 2.275rem;
-    color: rgb(210, 199, 39);
-    text-shadow: 2px 1px 1px black;
+    color: black;
 }
 
 .seungyun.projects {
@@ -139,35 +138,25 @@ font-family: montHeavy;
     transition: top 0.3s;
 }
 
-.home .navbar {
-    background: rgb(210, 199, 39);
-    border: 0.25rem solid black;
-}
-.home .seungyun {
-    color: rgb(57, 57, 57);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-}
 
 .nav-shape .nav-text {
-    font-family: "Helvetica Neue" Avenir;
+    font-family: Avenir, "Helvetica Neue", Avenir;
     font-size: 1.20rem;
     text-align: center;
     color: rgb(57, 57, 57);
-    text-shadow: 1px 1px 1px black;
     
 }
+/*
 .projects-page  .nav-text {
-    text-shadow: 1px 1px 1px black;
     color: var(--project-color);
 }
 .research-page .nav-text {
-    text-shadow: 1px 1px 1px black;
     color: var(--research-color);
 }
 .forfun-page .nav-text {
-    text-shadow: 1px 1px 1px black;
     color: var(--forfun-color);
 }
+*/
 
 
 .nav-link:hover .nav-shape {
@@ -191,7 +180,6 @@ font-family: montHeavy;
 
 .menu-button-text {
     color: var(--seungyun-color);
-    text-shadow: 2px 1px 1px black;
 }
 .menu-button {
     color: transparent;
@@ -364,7 +352,6 @@ font-family: montHeavy;
     font-weight: bold;
 }
 .thumbnail {
-    width: 100%;
     max-width: 800px;
     /*height: 100%; */
 }
@@ -380,11 +367,10 @@ font-family: montHeavy;
 
 
 /* projects page -------------------------------------------------------*/
-
 .project-item:hover {
     text-shadow: 3px 2px 2px gray;
     box-shadow: 3px 2px 2px gray;
-    background-color: rgb(155, 181, 84);
+    background-color: var(--project-color);
 }
 
 .project-title {
@@ -470,7 +456,8 @@ font-family: montHeavy;
 }
 
 
-#earthquake, #midlife, #library, #poster .body-text {
+#earthquake, #midlife, #library, #poster, #tutu,
+#cg .body-text {
     font-family: sans-serif;
     font-size: 1rem;
     line-height: 2rem;
@@ -526,7 +513,6 @@ font-family: montHeavy;
     width: 100%;
 }
 
-
 .card-title {
     text-align: center;
 }
@@ -562,10 +548,6 @@ font-family: montHeavy;
 
 
 /* forfun page ------------------------------------------------*/
-.thumbnail.poster-thumbnail {
-    width: 200px;
-}
-
 
 .servicesText.card.forfun {
     max-height: 450px;
@@ -621,16 +603,20 @@ font-family: montHeavy;
 }
 /* footer styling */
 #footer {
-    background-color: #808080;
     text-align: center;
 }
 
 
 /* spacing on all sections */
 #forfun, #projects, #research, #contact, #urp, #midlife, 
-#film, #About, #home, #color, #poster, #bottom, #library{
+#film, #home, #color, #poster, #bottom, #library,
+#tutu, #cg {
     margin-top: 4rem;
     padding-top: 4rem;
+}
+
+#About {
+    margin-top: 30%;;
 }
 
 #urp .body {

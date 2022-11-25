@@ -30,7 +30,7 @@
         <div class="container">
 
             <a class="navbar-brand" href="../index.html">
-                <p class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</p>
+                <p class="seungyun">Seungyun</p>
             </a>
 
             <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,46 +94,55 @@
 
     <section id="forfun">
 
+
         <div class="row justify-content-center">
 
-            <div class="row justify-content-center py-2">
-
-                <div class="item forfun-item col-md-3 py-2 me-1 justify-content-center"  OnClick="location.href ='forfun/poster.html'">
-                    
-                    <div class="thumbnail-container d-flex justify-content-center">
-                        <img class="thumbnail poster-thumbnail" src="../assets/img/forfun/poster.svg" alt="Card image">
-                    </div>
-
-                    <div class="title forfun-title align-self-end text-center justify-content-center">
-                        <p class="poster">Poster Design</p>
-                    </div>
-                    
+            <div class="item forfun-item col-4  justify-content-center"  OnClick="location.href ='forfun/library.html'">
+                <div class="title forfun-title my-3 text-center">
+                    <p class="library">Your Library</p>
+                    <img src="../assets/img/forfun/library_instagram.svg" alt="library_img_instagram" style="width:80%;">
                 </div>
-
-                <div class="item forfun-item row align-items-center col-md-7 py-2 ms-2"  OnClick="location.href ='forfun/film.html'">
-                    
-                    <div class="thumbnail-container col-8 d-flex justify-content-center">
-                        <img class="align-self-center" src="../assets/img/forfun/film_mirror_big.svg" alt="Card image" style="width:100%">
-                    </div>
-                    <div class="title forfun-title col-4">
-                        <p class="film">Film Gallery</p>
-                    </div>
-                    
-                </div>
-
             </div>
+
+            <div class="item col-6 forfun-item row align-items-center ms-2"  OnClick="location.href ='forfun/film.html'">
                 
-            <div class="row justify-content-center py-2">
+                
 
-                <div class="item forfun-item empty col-6" ></div>
-                <div class="item forfun-item col-4  justify-content-center"  OnClick="location.href ='forfun/library.html'">
-                    <div class="title forfun-title my-3 text-center">
-                        <p class="library">Your Library</p>
-                        <img src="../assets/img/forfun/library_instagram.svg" alt="library_img_instagram" style="width:200px;">
+                <div class="thumbnail-container d-flex justify-content-center">
+                    <img class="align-self-center mt-3" src="../assets/img/forfun/film_mirror_big.svg" alt="Card image" style="width:80%;">
+                </div>
+
+                <div class="title forfun-title">
+                    <p class="film">Film Gallery</p>
+                </div>
+
+            </div>
+        </div>
+                
+
+
+        <div class="row justify-content-center py-2">
+
+            <div class="item forfun-item empty col-6" ></div>
+
+            <div class="item col-4 forfun-item py-3"  OnClick="location.href ='forfun/poster.html'">
+                
+                <div class="thumbnail-container d-flex justify-content-center mt-3 mx-3">
+                    <img class="thumbnail poster-thumbnail" src="../assets/img/forfun/poster.svg" alt="Card image" style="width:70%;">
+                </div> 
+                
+                <div class="">
+                    <div class="title text-center align-self-end">
+                        <p class="poster" style="font-size:1.6rem;">Poster Design</p>
                     </div>
                 </div>
-    
+
             </div>
+
+
+
+            
+
         </div>
 </section>
 

@@ -322,6 +322,11 @@ font-family: montHeavy;
     background: transparent;
     margin: 0.5rem;
 }
+
+.title .spacepick {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight:900;
+}
 .title .cg {
     font-family: lemonRegular;
 }
@@ -452,7 +457,7 @@ font-family: montHeavy;
 
 
 #earthquake, #midlife, #library, #poster, #tutu,
-#cg .body-text {
+#cg, #space .body-text {
     font-family: sans-serif;
     font-size: 1rem;
     line-height: 2rem;
@@ -609,7 +614,7 @@ font-family: montHeavy;
 /* spacing on all sections */
 #forfun, #projects, #research, #contact, #urp, #midlife, 
 #film, #home, #color, #poster, #bottom, #library,
-#tutu, #cg {
+#tutu, #cg, #space  {
     margin-top: 4rem;
     padding-top: 4rem;
 }

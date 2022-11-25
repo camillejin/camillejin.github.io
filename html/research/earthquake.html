@@ -26,7 +26,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
             <a class="navbar-brand" href="../../index.html">
-                <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
+                <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">Seungyun</h1>
             </a>
             <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <p class="menu-button-text">MENU</p>
@@ -132,76 +132,79 @@
 
 
         <!--table-->
-        <div class="row">
-            <div class="body body-white py-3 mb-5 d-flex justify-content-center">
+        <div class="row justify-content-center body-white">
+            <div class=" col-md-4 body body-white py-3 pt-5 mb-5 px-5">
                 <div class="align-self-center mb-5 d-flex justify-content-center">
                     <img class="card-img-top" src="../../assets/img/research/earthquake/eq_research.png" 
-                    alt="brief research" style="width:50%">
+                    alt="brief research" style="width:100%">
                 </div>
             </div>
         </div>
 
+        <br><br><br><br><br>
 
 
-        <div class="row justify-content-center">
 
-            <div class="body col-md-5 align-self-center">
-                <p class="body-text px-5">
+        <div class="row align-items-center justify-content-center">
+
+            <div class="col-md-3">
+                <p class="body-text text-center">
                     In order to simulate the earthquake, the shaking effect was added to the camera, instead of the surrounding assets. 
                     Then different assets were implemented and tested out.
                 </p>
             </div>
-            <div class="col-md-5 align-self-center d-flex justify-content-center py-5">
+
+            <div class="col-md-3 py-5 d-flex justify-content-center">
                 <img class="unity_streetlight" src="../../assets/img/research/earthquake/unity_camera.svg" 
-                alt="unity_streetlight">
+                alt="unity_streetlight" style="width:100%;">
             </div>
         </div>
 
+        <br><br><br>
 
 
-        <div class="row justify-content-center">
-            <div class="col-md-5 align-self-center my-5 d-flex justify-content-center">
+
+        <div class="row align-items-center justify-content-center">
+
+            <div class="col-md-3 align-self-center my-5 d-flex justify-content-center">
                 <img class="unity_streetlight" src="../../assets/img/research/earthquake/unity_sound.svg" 
-                alt="unity_streetlight" style="width:300px">
+                alt="unity_streetlight" style="width:100%;">
             </div>
-            <div class="body col-md-5 align-self-center px-5">
+
+            <div class="body col-md-3 text-center">
                 <p class="body-text">
                     Sound effects including the screams, footsteps, traffics, etc. were also added into the timeline. 
                 </p>
             </div>
         </div>
 
+        <br><br><br>
 
 
 
-
-
-
-
-        <div class="row justify-content-center ali">
-            <div class="body col-md-5 align-self-center px-5 my-5 ">
-                <p class="body-text align-self-center">
-                    According to the reference video clips of our choice of intensity, parts of the walls were breaking down from the buildings. 
-                    However, it was difficult to modify the pre-built building assets. 
-                    Instead, I added dust and debris effects on the wall so that it looks as if the debris were falling from the wall. 
-                    I was also able to write a script that causes the streetlights to fall. 
-                </p>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-3 d-flex justify-content-center">
+                <div class="text-center mx-3">
+                    <p class="body-text">
+                        According to the reference video clips of our choice of intensity, parts of the walls were breaking down from the buildings. 
+                        However, it was difficult to modify the pre-built building assets. 
+                        Instead, I added dust and debris effects on the wall so that it looks as if the debris were falling from the wall. 
+                        I was also able to write a script that causes the streetlights to fall. 
+                    </p>
+                </div>
             </div>
-            <div class="col-md-5 align-self-center mb-5 d-flex justify-content-center">
-                <img class="unity_streetlight" src="../../assets/img/research/earthquake/unity_streetlight.svg" 
-                alt="unity_streetlight" style="width:400px">
+            <div class="col-md-5 d-flex justify-content-center">
+                <div>
+                    <img class="unity_streetlight mb-5" src="../../assets/img/research/earthquake/unity_streetlight.svg" 
+                    alt="unity_streetlight" style="width:100%;">
+                </div>
             </div>
         </div>
 
+        <br><br><br>
 
 
-
-
-
-
-
-
-        <div class="row body-white align-items-center justify-content-center">
+        <div class="row body-white pt-5 align-items-center justify-content-center">
             <div class="body col-md-7 px-5 pt-5 body-white">
                 <p class=" result">
                     Result!*
@@ -209,11 +212,14 @@
             </div>
         </div>
 
+        
+
 
         <div class="row">
             <div class="align-items-center body-white d-flex justify-content-center">
-                <div class="body col-md-7 body-white">
-                    <img class="gif-vr" src="../../assets/img/research/earthquake/earthquake_long.gif" alt="Earthquake VR.gif">  
+                <div class="body col-7 body-white">
+                    <img class="gif-vr" src="../../assets/img/research/earthquake/earthquake_long.gif" alt="Earthquake VR.gif"
+                    style="width:40%;min-width: 300px;">  
                     
                     <p class="lag py-3" style="font-size:smaller">
                         *The lag is from the free screen recording program, not the simulation vr
@@ -235,6 +241,11 @@
                 </p>
             </div>
         </div>
+
+    </section>
+
+
+    <section id="footer">
 
     </section>
 

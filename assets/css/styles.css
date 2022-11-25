@@ -179,7 +179,7 @@ font-family: montHeavy;
 }
 
 .menu-button-text {
-    color: var(--seungyun-color);
+    color: black;
 }
 .menu-button {
     color: transparent;
@@ -436,13 +436,8 @@ font-family: montHeavy;
 .research-earthquake {
     background-color: var(--research-color);
 }
-.research-earthquake .seungyun{
-    color: var(--seungyun-color);
-    text-shadow: 1px 1px 1px black;
-}
-.research-earthquake .nav-text{
-    color: var(--seungyun-color);
-    text-shadow: 1px 1px 1px black;
+.research-earthquake .seungyun {
+    color: black;
 }
 
 #earthquake {
@@ -603,7 +598,11 @@ font-family: montHeavy;
 }
 /* footer styling */
 #footer {
+    background-color: white;
     text-align: center;
+    padding: 20px 30px;
+    top: 0;
+    left: 0;
 }
 
 

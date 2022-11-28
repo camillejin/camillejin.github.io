@@ -39,7 +39,7 @@
         <div class="container">
 
             <a class="navbar-brand" href="../../index.html">
-                <h1 class="seungyun">Seungyun</h1>
+                <h1 class="seungyun" onmouseover="changeText(this, 'Seungyun')" onmouseleave="changeText(this, '승연')">승연</h1>
             </a>
 
             <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,95 +83,47 @@
         </div>
     </nav>
 
-    <section id="cg">
 
-        <div class="row align-items-center">
-            <div class="col-8 offset-2">
-                <p class="detail-page-title">3D Music House</p> 
-            </div>
+    <section id="dragndrop">
+
+        
+
+        <div class="row justify-content-center mt-5">
+
+            
+
+            <img class="back" src="../../assets/img/projects/color/back.svg" style="width:40%;"></img>
+
+
         </div>
-
-
-        <div class="row">
-            <div class="col-8 offset-2">
-                <p class="description-text">
-                    Class Project <br>
-                    <b>Timeline: </b> Spring 2022 <br>
-                    <b>Tools: </b>OpenGL, C++, Blender, XCode
-                </p>
-            </div>
-        </div>
-    
-        <div class="row">
-            <div class="col-9 offset-2">
-                <p class="description-text">
-                    3D music player is an OpenGL program that includes animation and accepts keyboard inputs.
-                </p>
-            </div>
-        </div>
-
 
         <div class="row justify-content-center">
-            <div class="body col-7 my-5">
-                <p class="body body-text " style="text-align:justify;">
-                    “You are Home” is an individual final project for the course Computer Graphics, a course I took in Spring, 2022.
-                    The class covered the basics of graphics programming and OpenGL, including topics such as
-                    shaders, transformation, texture, lighting, keyboard inputs, and model loading.
-                      In addition to applying the techniques taught in class, I further explored
-                      the use of audio libraries and Blender program to enhance the quality of the project.
-                </p>
+
+            <div class="col-3 d-flex justify-content-center">
+                <img class="ball" src="../../assets/img/projects/color/ball.svg" style="width:50px;z-index:1;"></img>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="align-self-center d-flex justify-content-center">
-                <img class="card-img-top px-5 py-5" src="../../assets/img/projects/3d/cg.svg" alt="Card image" style="width:90%;max-width: 800px;">
+            <div class ="col-3 d-flex justify-content-center">
+                <img class="ninjastar" src="../../assets/img/projects/color/ninjastar.svg" style="width:50px;z-index:1"></img>
             </div>
-        </div>
-    
 
-        <div class="row justify-content-center">
-            <div class="body col-7 my-5">
-                <p class="body body-text" style="text-align:justify;">
-                    The project was carried out when Harry Styles just released his new album “You are Home”.
-                     As I listened to the music, I imagined myself sitting on the couch inside the room of the album art.
-                      The project started from this experience. The finished program allows users to get close to and look around the room using keyboard inputs. 
-                      Space bar is used to pause and resume the music. When developing the program, royalty-free music was used instead of the actual track from Harry Styles' album. 
-                      In the future, I wish to further explore the possibilities of this project. 
-                      Collaboration with musicians or artists would be a dream come true!
-                </p>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="col-3 ms-5">
-                <img class="float1" src="../../assets/img/projects/3d/float.gif" alt="float1.gif" style="width:100%;">
-            </div>
-        </div>
-
-        <div class="row justify-content-end">
-            <div class="col-3 me-5">
-                <img class="float2" src="../../assets/img/projects/3d/float2.gif" alt="float2.gif" style="width:100%;">
+            <div class ="col-3 d-flex justify-content-center">
+                <img class="square" src="../../assets/img/projects/color/square.svg" style="width:50px;z-index:1"></img>
             </div>
 
         </div>
 
 
-    </section>
 
 
-    <section id="footer">
-        <br><br><br><br>
-        <br>
+
     </section>
 
 
     
 
     <!-- load javascript after loading all html content -->
-    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/dragndrop.js"></script>
 
   </body>
 </html>

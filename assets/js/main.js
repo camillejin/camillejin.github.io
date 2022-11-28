@@ -4,6 +4,7 @@ const shapeItems = document.querySelectorAll('.nav-shape');
 const imageHolder = document.getElementById('displayImage');
 const seungyun = document.querySelector('.seungyun');
 
+
 const path = window.location.pathname;
 const pathList = path.split(/[./]/);
 pathList.shift();
@@ -58,31 +59,3 @@ window.onscroll = function() {
 
 
 
-
-
-
-/*
-window.onscroll = function() {
-    var top = window.scrollY;
-    if(top >=100) {
-        header.classList.add('navbarDark');
-
-        circleItems.forEach(function(thisItem) {
-            if (thisItem.classList.contains(page)) {
-                thisItem.classList.add('scrolled');
-            }
-        });
-    }
-    else {
-
-        header.classList.remove('navbarDark');
-
-        circleItems.forEach(function(thisItem) {
-            if (thisItem.classList.contains(page)) {
-                thisItem.classList.remove('scrolled');
-            }
-        });
-    }
-}
-
-*/

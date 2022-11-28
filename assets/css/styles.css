@@ -140,7 +140,7 @@ font-family: montHeavy;
 
 
 .nav-shape .nav-text {
-    font-family: Avenir, "Helvetica Neue", Avenir;
+    font-family: "Helvetica Neue";
     font-size: 1.20rem;
     text-align: center;
     color: rgb(57, 57, 57);
@@ -159,8 +159,9 @@ font-family: montHeavy;
 */
 
 
-.nav-link:hover .nav-shape {
+.nav-link:hover .nav-text {
     font-style: oblique;
+    border-bottom: 0.2rem solid black;
 }
 .nav-shape.projects.colored .nav-text{
     font-style:  oblique;
@@ -341,10 +342,10 @@ font-family: montHeavy;
     font-family: bebas;
 }
 .title .midlife {
-    font-family: boldFont;
+    font-family: couture;
 }
 .title .urp{
-    font-family: couture;
+    font-family: boldFont; 
 }
 .title .film{
     font-family: kodak;
@@ -383,6 +384,7 @@ font-family: montHeavy;
 }
 .project-item.empty {
     background-color: var(--project-color);
+    box-shadow: none;
 }
 
 
@@ -397,6 +399,7 @@ font-family: montHeavy;
 }
 .research-item.empty {
     background-color: var(--research-color);
+    box-shadow: none;
 }
 
 
@@ -408,7 +411,7 @@ font-family: montHeavy;
 }
 .forfun-item.empty {
     text-shadow: 3px 2px 2px gray;
-    box-shadow: 3px 2px 2px gray;
+    box-shadow: none;
     background-color: var(--forfun-color);
 }
 .forfun-title {
@@ -457,8 +460,8 @@ font-family: montHeavy;
 
 
 #earthquake, #midlife, #library, #poster, #tutu,
-#cg, #space .body-text {
-    font-family: sans-serif;
+#cg, #space, #urp, #color .body-text {
+    font-family: "Helvetica", sans-serif;
     font-size: 1rem;
     line-height: 2rem;
     font-weight: lighter;
@@ -615,17 +618,12 @@ font-family: montHeavy;
 #forfun, #projects, #research, #contact, #urp, #midlife, 
 #film, #home, #color, #poster, #bottom, #library,
 #tutu, #cg, #space  {
-    margin-top: 4rem;
-    padding-top: 4rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 #About {
     margin-top: 30%;;
-}
-
-#urp .body {
-    font-family: 'Monaco', 'Lucida Console', 'Courier New', monospace;
-
 }
 #contact {
     padding-bottom: 4rem;

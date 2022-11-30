@@ -44,6 +44,7 @@ font-family: montHeavy;
 
 
 /*Main Page title of the website--------------------------------------*/
+
 .seungyun {
     font-family: Helvetica;
     font-size: 2.275rem;
@@ -381,41 +382,6 @@ font-family: montHeavy;
 .title {
     font-family: Helvetica;
 }
-/* 
-.title .spacepick {
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight:900;
-}
-.title .cg {
-    font-family: lemonRegular;
-}
-.title .color {
-    font-family: Helvetica;
-    font-weight: bold;
-}
-.title .Tutu {
-    text-transform: uppercase;
-    font-family: montHeavy;
-}
-.title .VR {
-    font-family: bebas;
-}
-.title .midlife {
-    font-family: couture;
-}
-.title .urp{
-    font-family: boldFont; 
-}
-.title .film{
-    font-family: kodak;
-}
-.title .poster{
-    font-family: tangoBold;
-}
-.title .library {
-    font-family: vogue;
-    font-weight: bold;
-} */
 
 #projects, #research, #forfun {
     margin-top: 10rem;
@@ -681,4 +647,29 @@ font-family: montHeavy;
 
 #contact {
     padding-bottom: 4rem;
+}
+
+
+
+
+
+
+.ninjastar-container {
+    position: absolute;
+    margin-left: 100px;
+
+}
+.ball-container {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+.square-container {
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 20px;
+}
+.back {
+    position: relative;
 }

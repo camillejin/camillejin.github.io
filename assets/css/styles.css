@@ -1,7 +1,8 @@
 :root {
+    --home-color: rgb(180, 226, 239);
     --project-color: rgb(190, 238, 86);
-    --research-color: rgb(148, 220, 241);
-    --forfun-color: rgb(249, 202, 247);
+    --research-color: rgb(198, 179, 255);
+    --forfun-color: rgb(255, 184, 220);
     --seungyun-color: rgb(210, 199, 39);
     --small-title: rgb(181, 181, 181);
     --hoveredGray: rgb(74, 74, 74);
@@ -10,22 +11,6 @@
 @font-face {
     font-family: instagram;
     src: url(fonts/instagram.otf);
-}
-@font-face {
-    font-family: tangoBold;
-    src: url(fonts/TangoSans_Bold.ttf);
-}
-@font-face {
-    font-family: kodak;
-    src: url(fonts/kodakku.ttf);
-}
-@font-face {
-    font-family: couture;
-    src: url(fonts/couture-bld.otf);
-}
-@font-face {
-    font-family: vogue;
-    src: url(fonts/Vogue.ttf);
 }
 @font-face {
     font-family: cool;
@@ -47,19 +32,6 @@ font-family: montHeavy;
     font-family: boldFont;
     src: url(fonts/THEBOLDFONT\ 2022.otf);
 }
-@font-face {
-    font-family: lemonBold;
-    src: url(fonts/LEMONMILK-Bold.otf);
-}
-@font-face {
-    font-family: lemonRegular;
-    src: url(fonts/LEMONMILK-Regular.otf);
-}
-@font-face {
-    font-family: lemonLight;
-    src: url(fonts/LEMONMILK-Light.otf);
-}
-
 
 
 
@@ -75,7 +47,7 @@ font-family: montHeavy;
 .seungyun {
     font-family: Helvetica;
     font-size: 2.275rem;
-    color: black;
+    color:var(--home-color);
 }
 
 .seungyun.projects {
@@ -87,6 +59,7 @@ font-family: montHeavy;
 .seungyun.forfun {
     color: var(--forfun-color);
 }
+
 .home-body-text {
     font-size:1.1rem;
     margin-left: 5%;
@@ -95,11 +68,61 @@ font-family: montHeavy;
     color: rgb(0, 0, 0);
     line-height:160%;
 }
+
+.readMore {
+    font-size:1rem;
+    font-family:"Helvetica";
+    font-weight:lighter;
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+    line-height:160%;
+}
+.readMore:hover {
+    color: var(--project-color);
+}
+
+#research .readMore:hover {
+    color: var(--research-color);
+}
+
+#forfun .readMore:hover {
+    color: var(--forfun-color);
+}
+
+.projects-body-text {
+    font-size:1.1rem;
+    font-family:"Helvetica";
+    font-weight:lighter;
+    color: rgb(0, 0, 0);
+    line-height:160%;
+}
+
+#research .home-title-1 {
+    color: var(--research-color);
+    margin-left: 5%;
+
+}
+
+#forfun .home-title-1 {
+    color: var(--forfun-color);
+    margin-left: 5%;
+
+}
+#projects .home-title-1 {
+    color: var(--project-color);
+    margin-left: 5%;
+}
+
+.align-right {
+    text-align:right;
+}
+
+
 .home-title-1 {
     font-size: 1.75rem;
     font-family: "Helvetica Neue";
     font-weight:400;
-    color:var(--research-color);
+    color:var(--home-color);
 }
 .linkedin {
     text-decoration:none;
@@ -159,6 +182,9 @@ font-family: montHeavy;
 
 
 /* nav bar -----------------------------------------------------------*/
+#navbar {
+    background-color: white;
+}
 .navbar.fixed-top {
     position: fixed;
     transition: top 0.3s;
@@ -183,7 +209,7 @@ font-family: montHeavy;
     color: var(--research-color);
 }
 .link-research:hover .text-research {
-    color: rgb(26, 140, 189);
+    color: rgb(68, 45, 80);
 }
 
 .home .nav-text.text-forfun {
@@ -393,8 +419,8 @@ font-family: montHeavy;
 
 #projects, #research, #forfun {
     margin-top: 10rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    /* margin-left: 5rem; */
+    /* margin-right: 5rem; */
 }
 
 

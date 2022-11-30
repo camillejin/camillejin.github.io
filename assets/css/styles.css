@@ -199,57 +199,25 @@ font-family: montHeavy;
     color: rgb(57, 57, 57);
     
 }
-.home .nav-text.text-projects {
+.nav-text.text-projects {
     color: var(--project-color);
 }
 .link-projects:hover .text-projects {
     color:rgb(100, 143, 51);
 }
 
-.home .nav-text.text-research {
+.nav-text.text-research {
     color: var(--research-color);
 }
 .link-research:hover .text-research {
     color: rgb(68, 45, 80);
 }
 
-.home .nav-text.text-forfun {
+.nav-text.text-forfun {
     color: var(--forfun-color);
 }
 .link-forfun:hover .text-forfun {
     color:#9e3357;
-}
-/*
-.projects-page  .nav-text {
-    color: var(--project-color);
-}
-.research-page .nav-text {
-    color: var(--research-color);
-}
-.forfun-page .nav-text {
-    color: var(--forfun-color);
-}
-*/
-
-
-/* .nav-link:hover .nav-text {
-    font-style: oblique;
-    border-bottom: 0.2rem solid black;
-} */
-.nav-shape.projects.colored .nav-text{
-    font-style:  oblique;
-    /*text-shadow: 1px 1px 1px gray;*/
-    border-bottom: 0.2rem solid black;
-}
-.nav-shape.research.colored .nav-text{
-    font-style:  oblique;
-    /*text-shadow: 1px 1px 1px gray;*/
-    border-bottom: 0.2rem solid black;
-}
-.nav-shape.forfun.colored  .nav-text{
-    font-style:  oblique;
-    /*text-shadow: 1px 1px 1px gray;*/
-    border-bottom: 0.2rem solid black;
 }
 
 .menu-button-text {
